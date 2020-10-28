@@ -77,3 +77,26 @@ farmhouse = [4.0, 14.0, 11.0, 9.0, 9.0, 8.0, 4.0, 20.0, 5.0, 8.9, 21.0, 9.2, 3.0
 # print(f'Median Farmhouse: {round(median(farmhouse), 1)}')
 
 
+'''
+Breakout Slide 18
+
+An issue of a recent magazine reported the following home sale amounts for a sample of homes in Alameda, CA, all of which were sold in the previous month (1000s of $):
+
+{ 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
+
+Find the mean value of the homes sold in April
+
+Find the median value of the homes sold in April 
+
+Do you think mean or median is a “better” measure of center for this data? why? 
+
+'''
+house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
+
+print(sorted(house_prices))
+print(f'Mean House Price: {round(mean(house_prices), 3)}')
+print(f'Median House Price: {round(median(house_prices), 3)}')
+
+
+
+
