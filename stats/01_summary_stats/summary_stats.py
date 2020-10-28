@@ -57,8 +57,8 @@ def median(lst):
 odd = [13, 18, 13, 14, 13, 16, 14, 21, 13]
 even = [15, 14, 10, 8, 12, 8, 16, 13]
 
-print(sorted(odd))
-print(median(odd))
+# print(sorted(odd))
+# print(median(odd))
 
-print(sorted(even))
-print(median(even))
+# print(sorted(even))
+# print(median(even))
