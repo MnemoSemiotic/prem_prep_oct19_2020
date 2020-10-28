@@ -102,4 +102,14 @@ house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 Mode
 '''
 def mode(lst):
+    most_occurring = lst[0]
 
+    for item in lst[1:]:
+        if lst.count(item) > lst.count(most_occurring):
+            most_occurring = item
+
+    return most_occurring
+
+mode_lst = ['skiing', 'kayaking', 'climbing', 'climbing', 'climbing', 'kayaking', 'juggles', 'kayaking', 'macromet']
+
+print(mode(mode_lst))
