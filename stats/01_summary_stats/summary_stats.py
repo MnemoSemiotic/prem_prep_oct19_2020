@@ -60,3 +60,16 @@ even = [15, 14, 10, 8, 12, 8, 16, 13]
 
 # print(sorted(even))
 # print(median(even))
+
+
+'''
+An article published in the journal, Indoor Air, considered two different air samples to test for endotoxin concentrations, the first in urban households, and the second in farmhouses.
+
+Calculate the Median of both groups
+
+'''
+urban = [6.0, 5.0, 11.0, 33.0, 4.0, 5.0, 80.0, 18.0, 35.0, 17.0, 23.0]
+farmhouse = [4.0, 14.0, 11.0, 9.0, 9.0, 8.0, 4.0, 20.0, 5.0, 8.9, 21.0, 9.2, 3.0, 2.0]
+
+print(f'Median Urban: {round(median(urban), 1)}')
+print(f'Median Farmhouse: {round(median(farmhouse), 1)}')
