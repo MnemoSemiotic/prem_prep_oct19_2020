@@ -113,3 +113,28 @@ def mode(lst):
 mode_lst = ['skiing', 'kayaking', 'climbing', 'climbing', 'climbing', 'kayaking', 'juggles', 'kayaking', 'macromet']
 
 # print(mode(mode_lst))
+
+
+
+'''
+Five-Number Summary
+Interquartile Range
+Detect Outliers
+'''
+def five_number_summary(lst):
+    min_ = min(lst)
+    max_ = max(lst)
+    med = median(lst)
+
+    sorted_lst = sorted(lst)
+
+    if len(lst) % 2 == 1:
+        lower_half = sorted_lst[0: int(len(lst) / 2)]
+        upper_half = sorted_lst[int(len(lst) / 2)+1: ]
+    else:
+        lower_half = sorted_lst[0: int(len(lst) / 2)]
+        upper_half = sorted_lst[int(len(lst) / 2): ]
+
+    print(sorted_lst)
+    print(lower_half)
+    print(upper_half)
