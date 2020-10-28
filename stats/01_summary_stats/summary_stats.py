@@ -93,10 +93,13 @@ Do you think mean or median is a “better” measure of center for this data? w
 '''
 house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 
-print(sorted(house_prices))
-print(f'Mean House Price: {round(mean(house_prices), 3)}')
-print(f'Median House Price: {round(median(house_prices), 3)}')
+# print(sorted(house_prices))
+# print(f'Mean House Price: {round(mean(house_prices), 3)}')
+# print(f'Median House Price: {round(median(house_prices), 3)}')
 
 
-
+'''
+Mode
+'''
+def mode(lst):
 
