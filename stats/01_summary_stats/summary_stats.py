@@ -280,3 +280,14 @@ roughly: the average distance betw each data value and the mean
 Bessel's correction (instead of dividing by n for a population, divide by n-1 for a sample)
 '''
 def variance(lst, sample=True):
+    mean_ = mean(lst)
+
+    total = 0
+
+    for item in lst:
+        total += (item - mean_)**2
+
+    if sample:
+        return total / (len(lst) - 1)
+    else:
+        return total / len(lst)
