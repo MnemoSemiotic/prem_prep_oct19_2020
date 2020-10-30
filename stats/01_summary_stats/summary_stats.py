@@ -269,3 +269,13 @@ def remove_outliers(lst, outlier_coef=1.5):
 house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 
 # print(remove_outliers(house_prices))
+
+'''
+Variance (sigma^2 or s^2)
+
+Standard Deviation (sigma, or s)
+
+roughly: the average distance betw each data value and the mean
+
+Bessel's correction (instead of dividing by n for a population, divide by n-1 for a sample)
+'''
