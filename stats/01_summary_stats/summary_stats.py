@@ -149,3 +149,10 @@ b = [6,1,4,51,7,16,10,14,46,22,24,56,48,54]
 # print('\n')
 # print(sorted(b))
 # print(five_number_summary(b))
+
+
+'''
+IQR
+Q3 - Q1
+'''
+def iqr(lst):
