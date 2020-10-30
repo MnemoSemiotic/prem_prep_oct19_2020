@@ -293,6 +293,9 @@ def variance(lst, sample=True):
         return total / len(lst)
 
 
+def stdev(lst, sample=True):
+
+
 '''
 Breakout Slide 41
 
