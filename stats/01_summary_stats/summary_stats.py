@@ -164,10 +164,10 @@ def iqr(lst):
 a = list(range(0,50+1, 5))
 b = list(range(0, 100+1, 5))
 
-print(a)
-print(five_number_summary(a))
-print(iqr(a))
+# print(a)
+# print(five_number_summary(a))
+# print(iqr(a))
 
-print(b)
-print(five_number_summary(b))
-print(iqr(b))
+# print(b)
+# print(five_number_summary(b))
+# print(iqr(b))
