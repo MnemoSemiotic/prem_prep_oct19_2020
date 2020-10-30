@@ -256,14 +256,16 @@ Consider the dataset:
 Write a function called remove_outliers, that takes a list and returns a copy of that list with the outliers removed.
 Be sure to include an outlier_coef and default that value to 1.5
 '''
-def remove_outliers(lst, outlier_coef):
+def remove_outliers(lst, outlier_coef=1.5):
     outliers = detect_outliers(lst, outlier_coef)
     output = []
 
     for num in lst:
-        if num not in output:
+        if num not in outliers:
             output.append(num)
 
     return output
 
+house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 
+print(remove_outliers(house_prices))
