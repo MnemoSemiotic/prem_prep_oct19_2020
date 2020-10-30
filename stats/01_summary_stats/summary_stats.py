@@ -256,3 +256,14 @@ Consider the dataset:
 Write a function called remove_outliers, that takes a list and returns a copy of that list with the outliers removed.
 Be sure to include an outlier_coef and default that value to 1.5
 '''
+def remove_outliers(lst, outlier_coef):
+    outliers = detect_outliers(lst, outlier_coef)
+    output = []
+
+    for num in lst:
+        if num not in output:
+            output.append(num)
+
+    return output
+
+
