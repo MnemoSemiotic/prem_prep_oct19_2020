@@ -323,7 +323,7 @@ print(f'Pop Variance: {variance(house_prices, sample=False)}')
 
 print(f'Samp StDev: {stdev(house_prices, sample=True)}')
 print(f'Pop StDev: {stdev(house_prices, sample=False)}')
-print(mean(house_prices))
+print(f'Mean: {mean(house_prices)}')
 
 print('\n Without Outliers:')
 # # If we exclude the values we considered to be outliers, do you think the variance will increase or decrease? Check your answer by making the calculation.
@@ -334,7 +334,6 @@ print(f'Samp Variance: {variance(house_prices_no_outliers, sample=True)}')
 print(f'Pop Variance: {variance(house_prices_no_outliers, sample=False)}')
 
 # Find the standard deviation of the homes sold in April 
-
 print(f'Samp StDev: {stdev(house_prices_no_outliers, sample=True)}')
 print(f'Pop StDev: {stdev(house_prices_no_outliers, sample=False)}')
-print(mean(house_prices_no_outliers))
+print(f'Mean: {mean(house_prices_no_outliers)}')
