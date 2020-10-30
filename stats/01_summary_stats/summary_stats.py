@@ -207,20 +207,23 @@ A = { 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
 
 '''
 
-house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
+# house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 
-print(sorted(house_prices))
+# print(sorted(house_prices))
 
-# Calculate the five number summary for the data
-# mean = 620.5 
-# median = 582.5
+# # Calculate the five number summary for the data
+# # mean = 620.5 
+# # median = 582.5
 
-print(five_number_summary(house_prices))
+# print(five_number_summary(house_prices))
 
-# Determine the IQR of the Dataset
-print(iqr(house_prices))
+# # Determine the IQR of the Dataset
+# print(iqr(house_prices))
 
-# Determine whether any of the data points can be defined as outliers. If so, what are the outliers?
-print(detect_outliers(house_prices, outlier_coef=1.5))
+# # Determine whether any of the data points can be defined as outliers. If so, what are the outliers?
+# print(detect_outliers(house_prices, outlier_coef=1.5))
 
-# What is the best measure of centrality for this data?
+# # What is the best measure of centrality for this data?
+# # median
+
+print(mean([408, 540, 555, 575, 590, 608, 615, 679]))
