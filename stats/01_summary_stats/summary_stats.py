@@ -314,4 +314,7 @@ If we exclude the values we considered to be outliers, do you think the variance
 house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 
 print(sorted(house_prices))
-print(variance(house_prices, sample=True))
+print(f'Samp Variance: {variance(house_prices, sample=True)}')
+print(f'Pop Variance: {variance(house_prices, sample=False)}')
+print(f'Samp StDev: {stdev(house_prices, sample=True)}')
+print(f'Pop StDev: {stdev(house_prices, sample=False)}')
