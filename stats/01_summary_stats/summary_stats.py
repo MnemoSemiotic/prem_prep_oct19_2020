@@ -248,3 +248,5 @@ print(iqr(a))
 print(detect_outliers(a))
 
 # What is the best measure of centrality for this data?
+print(f'mean: {mean(a)}')
+print(f'median: {median(a)}')
