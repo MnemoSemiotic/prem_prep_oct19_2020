@@ -183,5 +183,16 @@ def detect_outliers(lst, outlier_coef=1.5):
     '''
     returns a list of the outliers found in the data
     '''
-     _, q1, _, q3, _ = five_number_summary(lst)
-     iqr_ = iqr(lst)
+    _, q1, _, q3, _ = five_number_summary(lst)
+    iqr_ = iqr(lst)
+
+    outliers = []
+
+    for num in lst:
+        if num < q1 - outlier_coef*iqr_:
+            outliers.append(num)
+
+        if num > q3 + outlier_coef*iqr_:
+            outliers.append(num)
+
+    return outliers
