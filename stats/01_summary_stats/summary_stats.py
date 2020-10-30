@@ -279,3 +279,4 @@ roughly: the average distance betw each data value and the mean
 
 Bessel's correction (instead of dividing by n for a population, divide by n-1 for a sample)
 '''
+def variance(lst, sample=True):
