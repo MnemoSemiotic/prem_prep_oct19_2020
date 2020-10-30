@@ -158,5 +158,3 @@ Q3 - Q1
 def iqr(lst):
     pass
 
-def dog_losing_their_stuff(event):
-    return f'dog is losing their stuff over {event}'
