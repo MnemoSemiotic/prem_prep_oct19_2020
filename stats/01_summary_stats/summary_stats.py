@@ -253,6 +253,6 @@ Consider the dataset:
 
 
 '''
-Write a function called remove_outliers, that takes a list and returns a list with the outliers removed.
+Write a function called remove_outliers, that takes a list and returns a copy of that list with the outliers removed.
 Be sure to include an outlier_coef and default that value to 1.5
 '''
