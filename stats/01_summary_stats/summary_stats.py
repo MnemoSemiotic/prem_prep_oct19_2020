@@ -235,18 +235,24 @@ Breakout Slide 32
 Consider the dataset:
 '''
 
-a = [18, 15, 7, 27, 2, 9, 12, 1, 6, 19, 5]
+# a = [18, 15, 7, 27, 2, 9, 12, 1, 6, 19, 5]
 
-print(sorted(a))
-# Calculate the five number summary for the data
-print(five_number_summary(a))
+# print(sorted(a))
+# # Calculate the five number summary for the data
+# print(five_number_summary(a))
 
-# Determine the IQR of the Dataset
-print(iqr(a))
+# # Determine the IQR of the Dataset
+# print(iqr(a))
 
-# Determine whether any of the data points can be defined as outliers. If so, what are the outliers?
-print(detect_outliers(a))
+# # Determine whether any of the data points can be defined as outliers. If so, what are the outliers?
+# print(detect_outliers(a))
 
-# What is the best measure of centrality for this data?
-print(f'mean: {mean(a)}')
-print(f'median: {median(a)}')
+# # What is the best measure of centrality for this data?
+# print(f'mean: {mean(a)}')
+# print(f'median: {median(a)}')
+
+
+'''
+Write a function called remove_outliers, that takes a list and returns a list with the outliers removed.
+Be sure to include an outlier_coef and default that value to 1.5
+'''
