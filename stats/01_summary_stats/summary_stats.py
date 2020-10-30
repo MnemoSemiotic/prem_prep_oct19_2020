@@ -212,8 +212,8 @@ house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
 print(sorted(house_prices))
 
 # Calculate the five number summary for the data
-mean = 620.5 
-median = 582.5
+# mean = 620.5 
+# median = 582.5
 
 print(five_number_summary(house_prices))
 
