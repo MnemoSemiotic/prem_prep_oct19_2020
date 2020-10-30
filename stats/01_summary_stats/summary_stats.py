@@ -291,3 +291,4 @@ def variance(lst, sample=True):
         return total / (len(lst) - 1)
     else:
         return total / len(lst)
+
