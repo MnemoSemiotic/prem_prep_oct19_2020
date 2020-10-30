@@ -325,8 +325,10 @@ print(f'Samp StDev: {stdev(house_prices, sample=True)}')
 print(f'Pop StDev: {stdev(house_prices, sample=False)}')
 print(f'Mean: {mean(house_prices)}')
 
-print('\n Without Outliers:')
+
 # # If we exclude the values we considered to be outliers, do you think the variance will increase or decrease? Check your answer by making the calculation.
+print('\n Without Outliers:')
+
 house_prices_no_outliers = remove_outliers(house_prices)
 
 print(sorted(house_prices_no_outliers))
