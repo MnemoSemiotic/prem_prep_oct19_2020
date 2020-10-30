@@ -292,9 +292,9 @@ def variance(lst, sample=True):
     else:
         return total / len(lst)
 
-
+from math import sqrt
 def stdev(lst, sample=True):
-
+    return sqrt(variance(lst, sample))
 
 '''
 Breakout Slide 41
