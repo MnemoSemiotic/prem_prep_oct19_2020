@@ -226,4 +226,25 @@ A = { 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
 # # What is the best measure of centrality for this data?
 # # median
 
-print(mean([408, 540, 555, 575, 590, 608, 615, 679]))
+# print(mean([408, 540, 555, 575, 590, 608, 615, 679]))
+
+
+'''
+Breakout Slide 32
+
+Consider the dataset:
+'''
+
+a = [18, 15, 7, 27, 2, 9, 12, 1, 6, 19, 5]
+
+print(sorted(a))
+# Calculate the five number summary for the data
+print(five_number_summary(a))
+
+# Determine the IQR of the Dataset
+print(iqr(a))
+
+# Determine whether any of the data points can be defined as outliers. If so, what are the outliers?
+print(detect_outliers(a))
+
+# What is the best measure of centrality for this data?
