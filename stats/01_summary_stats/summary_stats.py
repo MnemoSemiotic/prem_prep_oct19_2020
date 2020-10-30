@@ -171,3 +171,17 @@ b = list(range(0, 100+1, 5))
 # print(b)
 # print(five_number_summary(b))
 # print(iqr(b))
+
+
+'''
+Detect Outliers
+low outliers < Q1 - IQR*1.5
+high outliers > Q3 + IQR*1.5
+'''
+
+def detect_outliers(lst, outlier_coef=1.5):
+    '''
+    returns a list of the outliers found in the data
+    '''
+     _, q1, _, q3, _ = five_number_summary(lst)
+     iqr_ = iqr(lst)
