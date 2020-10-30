@@ -292,3 +292,23 @@ def variance(lst, sample=True):
     else:
         return total / len(lst)
 
+
+'''
+Breakout Slide 41
+
+An issue of a recent magazine reported the following home sale amounts for a sample of homes in Alameda, CA, all of which were sold in the previous month (1000s of $) (use the sample calculations):
+
+{ 590, 615, 575, 608, 350, 1285, 408, 540, 555, 679 }
+
+Find the variance of the homes sold in April
+
+Find the standard deviation of the homes sold in April 
+
+If we exclude the values we considered to be outliers, do you think the variance will increase or decrease? Check your answer by making the calculation.
+
+'''
+
+house_prices = [590, 615, 575, 608, 350, 1285, 408, 540, 555, 679]
+
+print(sorted(house_prices))
+print(variance(house_prices, sample=True))
