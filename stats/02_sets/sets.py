@@ -210,4 +210,9 @@ for outcome in samp_space:
     if outcome.count('H') >= 1:
         B.append(outcome)
 
-print(B)
+# print(B)
+[[1, 'H', 'H'], [1, 'H', 'T'], [1, 'T', 'H'], [2, 'H', 'H'], [2, 'H', 'T'], [2, 'T', 'H'], [3, 'H', 'H'], [3, 'H', 'T'], [3, 'T', 'H'], [4, 'H', 'H'], [4, 'H', 'T'], [4, 'T', 'H']]
+
+
+# List the sample points which are in the Union of events A and B from above
+print(union(A, B))
