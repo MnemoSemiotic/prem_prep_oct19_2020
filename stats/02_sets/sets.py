@@ -92,4 +92,6 @@ def union_mult_sets(*args):
         
     return set_union
 
-print(union_mult_sets(list1, list2, list3))
+# print(union_mult_sets(list1, list2, list3))
+
+
