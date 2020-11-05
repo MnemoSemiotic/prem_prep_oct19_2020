@@ -166,6 +166,6 @@ sample_space = union_mult_sets(list1, list2, list3, extra_stuff)
 # print(sample_space)
 
 def complement(samp_space, set1):
-    pass
+    return difference(samp_space, set1)
 
 print(complement(sample_space, list1))
