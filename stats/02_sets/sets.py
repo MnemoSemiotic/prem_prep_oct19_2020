@@ -151,3 +151,16 @@ def difference(set1, set2):
 
 
 
+'''
+Complement
+- requires the sample space
+'''
+
+list1 = ['bear', 'cat', 'dog', 'dolphin', 'weasel'] 
+list2 = ['bear', 'dog', 'elephant', 'weasel', 'mink', 'mountain lion']
+list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
+
+extra_stuff = ['badger', 'hawk']
+
+sample_space = union_mult_sets(list1, list2, list3, extra_stuff)
+print(sample_space)
