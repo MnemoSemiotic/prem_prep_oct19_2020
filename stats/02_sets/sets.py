@@ -109,5 +109,23 @@ def intersection(set1, set2):
             set_intersect.append(item)
     return set_intersect
 
-print(intersection(list1, list2))
+# print(intersection(list1, list2))
 
+def intersection_mult(*args):
+    set_intersect = []
+
+    if len(args) > 0 and len(args[0]) > 0:
+        for item in args[0]:
+            flag = True
+            for set_ in args[1:]:
+                if item not in set_:
+                    flag = False
+                    break
+            if flag == True:
+                set_intersect.append(item)
+
+        return set_intersect
+    else:
+        return set_intersect
+
+print(intersection_mult([],[]))
