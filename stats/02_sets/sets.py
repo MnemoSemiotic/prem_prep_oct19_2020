@@ -121,7 +121,7 @@ def intersection_mult(*args):
                 if item not in set_:
                     is_member = False
                     break
-            if is_member == True:
+            if is_member:
                 set_intersect.append(item)
 
         return set_intersect
