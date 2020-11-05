@@ -36,9 +36,9 @@ list/set trick
 - removing duplicates through the essence of a set
 '''
 
-lst = [8,4,6,4,5,3,4,6,8,4,6,3,5,4,6,8,4,7]
-l1 = list(set(lst))
-print(l1) # [3, 4, 5, 6, 7, 8]
+# lst = [8,4,6,4,5,3,4,6,8,4,6,3,5,4,6,8,4,7]
+# l1 = list(set(lst))
+# print(l1) # [3, 4, 5, 6, 7, 8]
 
 
 def dedupe_in_order(lst):
@@ -48,4 +48,11 @@ def dedupe_in_order(lst):
             deduped.append(element)
     return deduped
 
-print(dedupe_in_order(lst))
+# print(dedupe_in_order(lst))
+
+
+
+
+'''
+Union
+'''
