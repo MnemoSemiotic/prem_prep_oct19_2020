@@ -201,4 +201,13 @@ for outcome in samp_space:
     if outcome[0] == 1:
         A.append(outcome)
 
-print(A)
+# print(A)
+# [[1, 'H', 'H'], [1, 'H', 'T'], [1, 'T', 'H'], [1, 'T', 'T']]
+
+# B = The event in which at least one of the coin flips results in heads
+B = []
+for outcome in samp_space:
+    if outcome.count('H') >= 1:
+        B.append(outcome)
+
+print(B)
