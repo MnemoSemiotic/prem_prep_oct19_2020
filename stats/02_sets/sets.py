@@ -85,6 +85,8 @@ def union(set1, set2):
 def union_mult_sets(*args):
     set_union = []
 
+    print(type(args))
+
     for lst in args:
         for item in lst:
             if item not in set_union:
@@ -92,6 +94,6 @@ def union_mult_sets(*args):
         
     return set_union
 
-# print(union_mult_sets(list1, list2, list3))
+print(union_mult_sets(list1, list2, list3))
 
 
