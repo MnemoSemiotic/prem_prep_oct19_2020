@@ -19,4 +19,7 @@ for _ in range(20):
 
 '''
 How many Heads would you "Expect" in 20 flips?
+0.5 * 20 = 10
 '''
+print(twenty_flips.count('H'))
+
