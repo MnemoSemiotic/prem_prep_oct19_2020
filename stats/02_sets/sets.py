@@ -128,4 +128,4 @@ def intersection_mult(*args):
     else:
         return set_intersect
 
-print(intersection_mult([],[]))
+# print(intersection_mult(list1, list2, list3))
