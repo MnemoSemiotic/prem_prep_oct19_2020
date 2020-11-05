@@ -130,3 +130,11 @@ def intersection_mult(*args):
 
 # print(intersection_mult(list1, list2, list3))
 
+
+'''
+Set Difference
+'''
+
+def difference(set1, set2):
+    pass
+
