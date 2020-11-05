@@ -163,4 +163,9 @@ list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
 extra_stuff = ['badger', 'hawk']
 
 sample_space = union_mult_sets(list1, list2, list3, extra_stuff)
-print(sample_space)
+# print(sample_space)
+
+def complement(samp_space, set1):
+    pass
+
+print(complement(sample_space, list1))
