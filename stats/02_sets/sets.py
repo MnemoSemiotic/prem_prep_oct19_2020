@@ -116,12 +116,12 @@ def intersection_mult(*args):
 
     if len(args) > 0 and len(args[0]) > 0:
         for item in args[0]:
-            flag = True
+            is_member = True
             for set_ in args[1:]:
                 if item not in set_:
-                    flag = False
+                    is_member = False
                     break
-            if flag == True:
+            if is_member == True:
                 set_intersect.append(item)
 
         return set_intersect
@@ -129,6 +129,7 @@ def intersection_mult(*args):
         return set_intersect
 
 # print(intersection_mult(list1, list2, list3))
+
 
 
 '''
@@ -144,7 +145,9 @@ def difference(set1, set2):
     
     return set_diff
 
-print(difference(list1, list2))
+# print(difference(list1, list2))
 
-print(difference(list2, list1))
+# print(difference(list2, list1))
+
+
 
