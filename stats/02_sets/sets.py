@@ -56,3 +56,11 @@ def dedupe_in_order(lst):
 '''
 Union
 '''
+list1 = ['bear', 'cat', 'dog', 'dolphin', 'weasel'] 
+list2 = ['bear', 'dog', 'elephant', 'weasel', 'mink', 'mountain lion']
+list3 = ['bear', 'whale', 'sea cucumber', 'mink', 'eagle', 'dog']
+
+def union(set1, set2):
+    pass
+
+print(union(list1, list2))
