@@ -85,7 +85,7 @@ def union(set1, set2):
 def union_mult_sets(*args):
     set_union = []
 
-    print(type(args))
+    # print(type(args)) # Surprise! *args is a tuple!
 
     for lst in args:
         for item in lst:
