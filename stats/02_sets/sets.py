@@ -136,5 +136,15 @@ Set Difference
 '''
 
 def difference(set1, set2):
-    pass
+    set_diff = []
+
+    for item in set1:
+        if item not in set2:
+            set_diff.append(item)
+    
+    return set_diff
+
+print(difference(list1, list2))
+
+print(difference(list2, list1))
 
