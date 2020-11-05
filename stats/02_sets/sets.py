@@ -171,3 +171,25 @@ def complement(samp_space, set1):
 # print(complement(sample_space, union(list1, list2)))
 
 
+'''
+Breakout Slide 8
+'''
+
+# Write out the sample space for the random experiment which is defined as sequentially completing the following steps:
+# First, rolling a fair four-sided die
+# Then, flipping a coin
+# And finally, flipping the coin a second time
+# 	{1HH, 1HT, 1TH ...
+
+four_sided = [1,2,3,4]
+fair_coin = ['H', 'T']
+
+samp_space = []
+
+for roll in four_sided:
+    for flip1 in fair_coin:
+        for flip2 in fair_coin:
+            samp_space.append([roll, flip1, flip2])
+
+for outcome in samp_space:
+    print(outcome)
