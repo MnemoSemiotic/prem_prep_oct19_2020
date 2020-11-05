@@ -51,6 +51,19 @@ def dedupe_in_order(lst):
 # print(dedupe_in_order(lst))
 
 
+'''
+Star (*) Args
+'''
+def star_args(*args):
+    for item in args:
+        print(item)
+    return None
+
+star_args('hi', 43, True, [1,2,3,4,5,6], 3.2)
+
+
+
+
 
 
 '''
