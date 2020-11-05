@@ -129,3 +129,4 @@ def intersection_mult(*args):
         return set_intersect
 
 # print(intersection_mult(list1, list2, list3))
+
