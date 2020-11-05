@@ -191,5 +191,14 @@ for roll in four_sided:
         for flip2 in fair_coin:
             samp_space.append([roll, flip1, flip2])
 
+# for outcome in samp_space:
+#     print(outcome)
+
+# List the sample points in the following events:
+# A = The event in which the die roll results in exactly one pip showing
+A = []
 for outcome in samp_space:
-    print(outcome)
+    if outcome[0] == 1:
+        A.append(outcome)
+
+print(A)
