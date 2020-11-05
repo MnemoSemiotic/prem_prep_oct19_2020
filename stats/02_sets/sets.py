@@ -215,4 +215,9 @@ for outcome in samp_space:
 
 
 # List the sample points which are in the Union of events A and B from above
-print(union(A, B))
+# print(union(A, B))
+[[1, 'H', 'H'], [1, 'H', 'T'], [1, 'T', 'H'], [1, 'T', 'T'], [2, 'H', 'H'], [2, 'H', 'T'], [2, 'T', 'H'], [3, 'H', 'H'], [3, 'H', 'T'], [3, 'T', 'H'], [4, 'H', 'H'], [4, 'H', 'T'], [4, 'T', 'H']]
+
+
+# print(complement(samp_space, union(A, B)))
+[[2, 'T', 'T'], [3, 'T', 'T'], [4, 'T', 'T']]
