@@ -15,4 +15,8 @@ twenty_flips = []
 for _ in range(20):
     twenty_flips.append(coin_flip())
 
-print(twenty_flips)
+# print(twenty_flips)
+
+'''
+How many Heads would you "Expect" in 20 flips?
+'''
