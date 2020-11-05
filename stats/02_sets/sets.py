@@ -10,22 +10,22 @@ def coin_flip():
 # print(coin_flip())
 
 # 20 flips
-twenty_flips = []
+def twenty_flips():
+    twenty_flips_ = []
 
-for _ in range(20):
-    twenty_flips.append(coin_flip())
+    for _ in range(20):
+        twenty_flips_.append(coin_flip())
 
-# print(twenty_flips)
+    return twenty_flips_.count('H')
 
 '''
 How many Heads would you "Expect" in 20 flips?
 0.5 * 20 = 10
 '''
 
-# result_of_heads_20_flips = []
+result_of_heads_20_flips = []
 
-# for _ in range(100000):
-#     result_of_heads_20_flips.append(twenty_flips.count('H'))
+for _ in range(1000):
+    result_of_heads_20_flips.append(twenty_flips())
 
-
-# print(sum(result_of_heads_20_flips) / 100000)
+print(sum(result_of_heads_20_flips) / 1000)
