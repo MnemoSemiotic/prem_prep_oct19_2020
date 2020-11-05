@@ -31,3 +31,10 @@ How many Heads would you "Expect" in 20 flips?
 # print(sum(result_of_heads_20_flips) / 100000)
 
 
+'''
+list/set trick
+- removing duplicates through the essence of a set
+'''
+
+l1 = list(set([8,4,6,4,5,3,4,6,8,4,6,3,5,4,6,8,4,7]))
+print(l1)
