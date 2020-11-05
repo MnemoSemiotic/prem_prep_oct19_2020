@@ -22,10 +22,10 @@ How many Heads would you "Expect" in 20 flips?
 0.5 * 20 = 10
 '''
 
-result_of_heads_20_flips = []
+# result_of_heads_20_flips = []
 
-for _ in range(100000):
-    result_of_heads_20_flips.append(twenty_flips.count('H'))
+# for _ in range(100000):
+#     result_of_heads_20_flips.append(twenty_flips.count('H'))
 
 
-print(sum(result_of_heads_20_flips) / 100000)
+# print(sum(result_of_heads_20_flips) / 100000)
