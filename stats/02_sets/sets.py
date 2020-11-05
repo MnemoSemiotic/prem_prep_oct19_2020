@@ -1,1 +1,6 @@
-print('hey')
+'''
+Random Experiment
+'''
+
+from random import choice
+
