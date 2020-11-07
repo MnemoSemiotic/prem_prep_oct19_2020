@@ -19,3 +19,17 @@ c = True
 
 # print((a or b) == (b or a))
 # print((a and b) == (b and a))
+
+'''
+Associative
+(A U B) U C = A U (B U C)
+(AB)C = A(BC)  
+'''
+
+print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
+
+a = True
+b = False
+c = True
+
+print(((a or b) or c) == (a or (b or c)))
