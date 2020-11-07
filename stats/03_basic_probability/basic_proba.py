@@ -61,6 +61,60 @@ for lst in four_flips:
     if lst.count('H') == 3:
         three_heads.append(lst)
 
-print(len(three_heads))
-print(len(four_flips))
-print(len(three_heads) / len(four_flips))
+# print(len(three_heads))
+# print(len(four_flips))
+# print(len(three_heads) / len(four_flips))
+
+
+'''
+Suppose you call the function series_of_flips(14). 
+What is the probability that you get all 'H' values?
+
+HHHHHHHHHHHHHH <--
+HHHHHHHHHHHHHT
+HHHHHHHHHHHHTH
+HHHHHHHHHHHHTT
+...
+
+first consider the probability of P(H) for one flip
+0.5
+
+H <--
+T
+
+next consider P(HH) for two flips
+0.25
+
+HH <--
+HT
+TH
+TT
+
+... P(HHH) ...
+0.125 = 0.5*0.5*0.5
+
+
+P(H 14 times) = (1 / 2)**14
+'''
+
+
+'''
+Suppose you call the function series_of_flips(14). 
+What is the probability that you get at least one 'T' value?
+
+P(at least one T in 14 flips) = 1 - (1 / 2)**14
+'''
+
+
+'''
+Suppose you call the function series_of_flips(14). 
+What is the probability that you get 5 'T' values?
+We don't yet have the best tools to answer this
+
+HHHHHHHHHTTTTT
+HHHHHHHHTHTTTT
+HHHHHHHTHHTTTT
+
+Binomial Distribution (we'll learn this later)
+'''
+
