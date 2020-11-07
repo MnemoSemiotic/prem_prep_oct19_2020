@@ -17,5 +17,5 @@ a = True
 b = False
 c = True
 
-print((a or b) == (b or a))
-print((a and b) == (b and a))
+# print((a or b) == (b or a))
+# print((a and b) == (b and a))
