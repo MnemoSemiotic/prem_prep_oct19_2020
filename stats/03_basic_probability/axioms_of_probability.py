@@ -26,10 +26,19 @@ Associative
 (AB)C = A(BC)  
 '''
 
-print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
+# print((setA.union(setB)).union(setC) == (setC.union(setB)).union(setA))
 
 a = True
 b = False
 c = True
 
-print(((a or b) or c) == (a or (b or c)))
+# print(((a or b) or c) == (a or (b or c)))
+
+
+'''
+Distributive 
+A U (BC) = (A U B)(A U C)
+A(B U C) = (AB) U (AC)
+'''
+
+print(setA.union(setB.intersection(setC)) == (setA.union(setB)).intersection(setA.union(setC)))
