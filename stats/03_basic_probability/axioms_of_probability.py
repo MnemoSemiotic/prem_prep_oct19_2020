@@ -41,4 +41,6 @@ A U (BC) = (A U B)(A U C)
 A(B U C) = (AB) U (AC)
 '''
 
-print(setA.union(setB.intersection(setC)) == (setA.union(setB)).intersection(setA.union(setC)))
+# print(setA.union(setB.intersection(setC)) == (setA.union(setB)).intersection(setA.union(setC)))
+
+# print(a or (b and c) == (a and b) or (a and c))
