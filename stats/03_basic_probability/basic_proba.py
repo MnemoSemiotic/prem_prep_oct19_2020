@@ -10,4 +10,9 @@ Write a function called series_of_flips, that has one parameter, n, which repres
 if n=4, then something like this: ['H', 'H', 'T', 'H']
 '''
 def series_of_flips(n):
-    pass
+    flips = []
+    for _ in range(n):
+        flips.append(coin_flip())
+    return flips
+
+print(series_of_flips(4))
