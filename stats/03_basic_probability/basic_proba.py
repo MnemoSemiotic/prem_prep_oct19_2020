@@ -118,3 +118,25 @@ HHHHHHHTHHTTTT
 Binomial Distribution (we'll learn this later)
 '''
 
+'''
+What is the probability of getting this exact series in 6 coin flips:
+HTTHTH?
+
+0.5**6
+
+NOTE: A very different question would be:
+What is the probability of getting exactly 3 tails in 6 coin flips?
+could use nested for loops, or binomial pmf
+'''
+
+
+
+'''
+In three six-sided dice rolls, what is the P of getting a sum of the three rolls below 6?
+'''
+outcomes = []
+
+for r1 in range(1, 6+1):
+    for r2 in range(1, 6+1):
+        for r3 in range(1, 6+1):
+            outcomes.append([r1, r2, r3])
