@@ -46,5 +46,6 @@ four_flips = four_flip_sample_space()
 
 
 '''
-What is the probability that in 4 coin flips, you get 3 heads?
+What is the probability that in 4 coin flips, you get exactly 3 heads?
+
 '''
