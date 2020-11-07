@@ -15,4 +15,18 @@ def series_of_flips(n):
         flips.append(coin_flip())
     return flips
 
-print(series_of_flips(4))
+# print(series_of_flips(4))
+
+
+'''
+Write a function called four_flip_sample_space that has no parameters. It should return a list of all possible outcomes for 4 coin flips.
+[
+    ['H', 'H', 'H', 'H'],
+    ['H', 'H', 'H', 'T'],
+    ['H', 'H', 'T', 'H']
+    ...
+    ['T', 'T', 'T', 'T']
+]
+'''
+def four_flip_sample_space():
+    pass
