@@ -54,3 +54,21 @@ b = False
 c = True
 
 print((a and a) == a)
+
+
+'''
+Domination Laws
+'''
+print(setA.intersection(sample_space) == setA)
+
+null_set = set()
+print(setA.intersection(null_set) == null_set)
+
+
+U = {True, False}
+A = {True}
+
+print(A.intersection(U) == A)
+
+
+
