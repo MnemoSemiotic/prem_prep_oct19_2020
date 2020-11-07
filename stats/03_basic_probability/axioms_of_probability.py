@@ -44,3 +44,13 @@ A(B U C) = (AB) U (AC)
 # print(setA.union(setB.intersection(setC)) == (setA.union(setB)).intersection(setA.union(setC)))
 
 # print(a or (b and c) == (a and b) or (a and c))
+
+
+'''
+Idempotent Laws
+'''
+a = True
+b = False
+c = True
+
+print((a and a) == a)
