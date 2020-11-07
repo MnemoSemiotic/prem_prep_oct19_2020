@@ -134,9 +134,17 @@ could use nested for loops, or binomial pmf
 '''
 In three six-sided dice rolls, what is the P of getting a sum of the three rolls below 6?
 '''
-outcomes = []
+outcomes_S = []
 
 for r1 in range(1, 6+1):
     for r2 in range(1, 6+1):
         for r3 in range(1, 6+1):
-            outcomes.append([r1, r2, r3])
+            outcomes_S.append([r1, r2, r3])
+
+A = []
+
+for roll in outcomes_S:
+    if sum(roll) < 6:
+        A.append(roll)
+
+print(len(A) / len(outcomes_S)) # ~0.0463
