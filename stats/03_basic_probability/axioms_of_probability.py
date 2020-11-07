@@ -72,3 +72,48 @@ print(A.intersection(U) == A)
 
 
 
+'''
+Absorption Laws
+'''
+
+a = True
+b = False
+c = True
+
+print(a or (a and b) == a)
+print(a and ( a or b) == a)
+
+
+'''
+Identity Prop
+'''
+print(setA.union(null_set) == setA)
+
+
+
+
+'''
+Complement Laws
+null^c = Universal
+Universal^c = null
+'''
+
+
+'''
+Involution Law
+'''
+print(not not a == a)
+
+
+'''
+AB U AB^c == A
+'''
+print((a and b) or ( a and not b) == a)
+
+
+'''
+DeMorgan's Laws
+'''
+print((not (a or b)) == ((not a) and (not b)))
+
+print((not (a and b)) == ((not a) or (not b)))
