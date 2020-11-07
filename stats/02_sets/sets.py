@@ -221,3 +221,47 @@ for outcome in samp_space:
 
 # print(complement(samp_space, union(A, B)))
 [[2, 'T', 'T'], [3, 'T', 'T'], [4, 'T', 'T']]
+
+
+'''
+Breakout Slide 17
+'''
+
+# Let our sample space be rolling two 6-sided dice.
+sample_space = []
+
+for roll1 in range(1, 6+1):
+    for roll2 in range(1, 6+1):
+        sample_space.append([roll1, roll2])
+
+# for outcome in sample_space:
+#     print(outcome)
+
+# Event A: any roll with a sum greater than or equal to 10
+# Event B: any roll with an even sum
+
+A, B = [], []
+
+for outcome in sample_space:
+    if sum(outcome) >= 10:
+        A.append(outcome)
+    if sum(outcome) % 2 == 0:
+        B.append(outcome)
+
+# What do our events A and B look like?
+# print('A:')
+# for outcome in A:
+#     print(outcome)
+
+# print()
+
+# print('B:')
+# for outcome in B:
+#     print(outcome)
+
+# What is A - B?
+# print(difference(A, B))
+
+# print()
+# # What is B - A?
+# print(difference(B, A))
