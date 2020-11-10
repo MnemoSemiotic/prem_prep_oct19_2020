@@ -84,5 +84,7 @@ for an_number in animals_counting:
             break
     
     if perm == True:
-        animals_perms.append(an_number)
+        animal_perms.append(an_number)
 
+for an_number in animal_perms:
+    print(an_number)
