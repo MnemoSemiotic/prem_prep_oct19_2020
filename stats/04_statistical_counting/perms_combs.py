@@ -41,4 +41,11 @@ def permutations(n, k):
 
 # print(permutations(10, 4)) # 5040
 
-print(permutations(1000, 420))
+
+def permutations(n, k):
+    perm = 1
+    for i in range(n, n-k, -1):
+        perm *= i
+    return perm
+
+print(permutations(10, 4)) # 5040
