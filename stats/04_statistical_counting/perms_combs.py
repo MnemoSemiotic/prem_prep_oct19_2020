@@ -36,4 +36,9 @@ g h j i
 g j h i
 '''
 
-def permutations(n, k)
+def permutations(n, k):
+    return int(factorial(n) / factorial(n-k))
+
+# print(permutations(10, 4)) # 5040
+
+print(permutations(10000, 5420))
