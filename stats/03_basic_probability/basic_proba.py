@@ -151,3 +151,6 @@ for roll in outcomes_S:
 
 
 
+'''
+What is the probability of getting 3 6's when rolling 3 6-sided dice?
+'''
