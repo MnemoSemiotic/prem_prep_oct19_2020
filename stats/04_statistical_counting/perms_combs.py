@@ -172,7 +172,7 @@ def basketball_combs_samp(team_size=21, num_players=5):
 
     player_range = range(1, team_size+1)
 
-    while len(combs) < combinations(21, 5):
+    while len(combs) < combinations(team_size, num_players):
         player_comb = []
 
         while(len(player_comb) < num_players):
@@ -184,7 +184,7 @@ def basketball_combs_samp(team_size=21, num_players=5):
         player_comb = sorted(player_comb)
 
         if player_comb not in combs:
-            print(player_comb)
+            # print(player_comb)
             combs.append(player_comb)
 
     return combs
