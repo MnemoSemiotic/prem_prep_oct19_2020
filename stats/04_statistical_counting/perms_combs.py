@@ -41,4 +41,4 @@ def permutations(n, k):
 
 # print(permutations(10, 4)) # 5040
 
-print(permutations(10000, 5420))
+print(permutations(1000, 420))
