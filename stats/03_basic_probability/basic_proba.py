@@ -202,6 +202,8 @@ choosing a queen?
 
 
 '''
+Another Mult Rule Example
+
 The probability of catching a taxi on a busy street within 5 mins is 0.25
 The probability of seeing a bluebird while in the taxi is 0.03
 The probability that the mail has arrived when you get home is 0.78
