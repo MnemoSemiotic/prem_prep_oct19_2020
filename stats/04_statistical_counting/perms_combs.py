@@ -164,4 +164,11 @@ def basketball_combs():
 We can sample 5 players from our list of 21, can continue to 
 build those combinations until we reach
 '''
-print(combinations(21, 5))
+# print(combinations(21, 5)) # 20349
+from random import choice
+
+def basketball_combs_samp(team_size=21, num_players=5):
+
+    combinations = []
+
+    
