@@ -13,8 +13,11 @@ def factorial(num):
 '''
 Factorial Breakout Slide 10
 There are ten people standing in a line for beignets at the world famous cafe du monde in New Orleans. How many different ways could the ten people be arranged in the queue?
-
+10! = 3628800
 
 Given that the line was formed organically (i.e, people got into line as they arrived without any organization or coordination), what is the probability that they are standing in the queue in alphabetical order. Assume everyone has a different last name?
+ a b c d e f g h i j
 
+ 1 / 10!
 '''
+# print(factorial(10))
