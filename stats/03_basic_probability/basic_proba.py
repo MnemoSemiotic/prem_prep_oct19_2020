@@ -186,8 +186,7 @@ What is the probability that you'll get:
 '''
 Dependence
 
-What is the probability of choosing an ace of spades from a 52 card deck?
-
+What is the probability of choosing an ace of spades from a 52 card deck, without replacement?
 1/52
 
 Given that the prior event has occurred, what is the P(Queen)?
