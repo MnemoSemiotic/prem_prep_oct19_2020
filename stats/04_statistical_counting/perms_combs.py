@@ -21,3 +21,19 @@ Given that the line was formed organically (i.e, people got into line as they ar
  1 / 10!
 '''
 # print(factorial(10))
+
+
+'''
+Permutations
+P(n, k) = n! / (n - k)!
+'''
+
+'''
+You have 10 students and you are conducting a science fair where 4 students will win 1st, 2nd, 3rd, 4th. How many different arrangements of those 4 winners is possible?
+
+g h i j
+g h j i
+g j h i
+'''
+
+def permutations(n, k)
