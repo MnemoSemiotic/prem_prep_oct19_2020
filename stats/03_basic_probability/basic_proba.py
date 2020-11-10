@@ -199,3 +199,15 @@ What is the probability of choosing an ace of spades from a 52 card deck and the
 choosing a queen?
 1/52 * 4/51
 '''
+
+
+'''
+The probability of catching a taxi on a busy street within 5 mins is 0.25
+The probability of seeing a bluebird while in the taxi is 0.03
+The probability that the mail has arrived when you get home is 0.78
+
+What is the probability that all these events will occur?
+0.25 * 0.03 * 0.78
+
+'''
+
