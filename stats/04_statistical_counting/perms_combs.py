@@ -48,4 +48,5 @@ def permutations(n, k):
         perm *= i
     return perm
 
-print(permutations(10000, 5426))
+# print(permutations(10000, 5426)) # note integer precision is lost here
+
