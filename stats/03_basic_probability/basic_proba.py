@@ -152,6 +152,8 @@ for roll in outcomes_S:
 
 
 '''
+Multiplication Rule example
+
 What is the probability of getting 3 6's when rolling 3 6-sided dice?
 (1/6)**3
 
