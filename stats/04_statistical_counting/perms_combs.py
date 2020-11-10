@@ -50,3 +50,8 @@ def permutations(n, k):
 
 # print(permutations(10000, 5426)) # note integer precision is lost here
 
+
+
+'''
+Permutations Intuition
+'''
