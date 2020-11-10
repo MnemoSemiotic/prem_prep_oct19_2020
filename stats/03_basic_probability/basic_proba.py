@@ -147,4 +147,6 @@ for roll in outcomes_S:
     if sum(roll) < 6:
         A.append(roll)
 
-print(len(A) / len(outcomes_S)) # ~0.0463
+# print(len(A) / len(outcomes_S)) # ~0.0463
+
+
