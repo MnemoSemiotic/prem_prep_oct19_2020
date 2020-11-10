@@ -167,3 +167,34 @@ What is the probability of getting 3 6's when rolling 3 6-sided dice?
 '''
 
 
+'''
+In a probabilistic process, you roll 1 6 sided-die, flip a coin, then roll a 12-sided die.
+
+What is the probability that you'll get this exact sequence:
+2, Heads, 7 ?
+
+1/6 * 1/2 * 1/12
+
+What is the probability that you'll get:
+< 3, Tails, > 6 ?
+
+2/6 * 1/2 * 6/12
+'''
+
+
+
+'''
+Dependence
+
+What is the probability of choosing an ace of spades from a 52 card deck?
+
+1/52
+
+Given that the prior event has occurred, what is the P(Queen)?
+4/51
+
+
+What is the probability of choosing an ace of spades from a 52 card deck and then
+choosing a queen?
+1/52 * 4/51
+'''
