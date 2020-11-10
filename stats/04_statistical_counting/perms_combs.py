@@ -126,7 +126,7 @@ What are all the combinations of teams that can be on the court
 num_combs = combinations(21, 5)
 
 def basketball_combs():
-    twentyone_nums = range(1, 10+1)
+    twentyone_nums = range(1, 21+1)
 
     # every arrangement of 5
     possible_five = []
