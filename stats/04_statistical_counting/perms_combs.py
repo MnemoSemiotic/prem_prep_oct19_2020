@@ -121,7 +121,7 @@ Out of a set of 21 basketball players, only 5 can be on the court at any given t
 '''
 What are all the combinations of teams that can be on the court
 '''
-# an expensive approach
+# an expensive counting approach
 
 num_combs = combinations(21, 5)
 
@@ -155,5 +155,13 @@ def basketball_combs():
     return combinations
 
 
-for five in basketball_combs():
-    print(five)
+# for five in basketball_combs():
+#     print(five)
+
+
+# an expensive sampling approach
+'''
+We can sample 5 players from our list of 21, can continue to 
+build those combinations until we reach
+'''
+print(combinations(21, 5))
