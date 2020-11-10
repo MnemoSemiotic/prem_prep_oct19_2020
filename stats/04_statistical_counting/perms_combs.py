@@ -68,7 +68,7 @@ for an1 in base_5:
         for an3 in base_5:
             for an4 in base_5:
                 for an5 in base_5:
-                    animals_counting.append([an1, an2,an3,an4,an5])
+                    animals_counting.append([an1, an2, an3, an4, an5])
 
 # for an_number in animals_counting:
 #     print(an_number)
@@ -86,5 +86,13 @@ for an_number in animals_counting:
     if perm == True:
         animal_perms.append(an_number)
 
-for an_number in animal_perms:
-    print(an_number)
+# for an_number in animal_perms:
+#     print(an_number)
+
+
+
+'''
+Combination
+
+nCk = n! / ((n-k)! * k!)
+'''
