@@ -164,11 +164,34 @@ def basketball_combs():
 We can sample 5 players from our list of 21, can continue to 
 build those combinations until we reach
 '''
-# print(combinations(21, 5)) # 20349
 from random import choice
 
 def basketball_combs_samp(team_size=21, num_players=5):
 
-    combinations = []
+    combs = []
 
-    
+    player_range = range(1, team_size+1)
+
+    while len(combs) < combinations(21, 5):
+        player_comb = []
+
+        while(len(player_comb) < num_players):
+            player_num = choice(player_range)
+
+            if player_num not in player_comb:
+                player_comb.append(player_num)
+
+        player_comb = sorted(player_comb)
+
+        if player_comb not in combs:
+            print(player_comb)
+            combs.append(player_comb)
+
+    return combs
+
+team_size = 21
+num_players = 5
+
+print(combinations(team_size, num_players))
+print(len(basketball_combs_samp(team_size, num_players)))
+
