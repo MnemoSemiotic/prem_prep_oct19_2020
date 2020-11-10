@@ -211,5 +211,6 @@ The probability that the mail has arrived when you get home is 0.78
 What is the probability that all these events will occur?
 0.25 * 0.03 * 0.78
 
+Independent events are "Mutually Exclusive" events
 '''
 
