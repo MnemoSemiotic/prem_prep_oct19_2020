@@ -64,3 +64,7 @@ functioning upon observation?
 '''
 
 
+'''
+How to count in binary?
+
+'''
