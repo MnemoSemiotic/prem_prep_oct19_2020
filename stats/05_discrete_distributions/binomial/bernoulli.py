@@ -13,3 +13,9 @@ def bernoulli(p_success=0.5):
         return False
 
 # print(bernoulli(0.75))
+
+'''
+If you have a coin that on average turns up heads in 90% of its flips, what is the probability that you'll get heads?
+0.9
+'''
+
