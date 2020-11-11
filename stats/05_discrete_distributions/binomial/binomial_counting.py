@@ -30,3 +30,6 @@ Given a decimal number
         until that number is 0
     - reverse the sequence of number that was set aside
 '''
+
+def dec_to_bin(dec, num_bits=8):
+    pass
