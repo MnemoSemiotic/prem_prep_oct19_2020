@@ -12,4 +12,4 @@ def combinations(n, k):
 def binomial_pmf(n, k, p=0.5):
     return combinations(n, k) * (p**k) * (1-p)**(n-k)
 
-print(binomial_pmf(8, 4, p=0.5))
+print(binomial_pmf(8, 4, p=0.5)) # 0.2734375
