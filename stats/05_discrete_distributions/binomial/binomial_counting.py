@@ -32,4 +32,14 @@ Given a decimal number
 '''
 
 def dec_to_bin(dec, num_bits=8):
-    pass
+    bin_list = []
+    x = dec
+
+    for _ in range(num_bits):
+        bit = x % 2
+        bin_list.append(bit)
+        x //= 2
+
+    return bin_list[::-1] # list(reversed(bin_list))
+
+# print(dec_to_bin(43))
