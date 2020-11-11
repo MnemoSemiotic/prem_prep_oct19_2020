@@ -57,3 +57,26 @@ def get_binary(n_bits=8):
 # for dec, bin_ in get_binary(n_bits=16).items():
 #     print(f'{dec}: {bin_}')
 
+
+
+'''
+Construct binomial distr for n trials with prob=0.5 for each trial
+'''
+
+def binomial_distr(n_trials=8):
+    binomial_dict = dict()
+
+    bin_dict = get_binary(n_bits=n_trials)
+
+    for _, binary in bin_dict.items():
+        sum_bits = sum(binary)
+        if sum_bits not in binomial_dict:
+            binomial_dict[sum_bits] = 0
+        binomial_dict[sum_bits] += 1
+
+    return binomial_dict
+
+d = binomial_distr(n_trials=8)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
