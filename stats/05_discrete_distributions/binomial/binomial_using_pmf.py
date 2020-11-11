@@ -1,0 +1,1 @@
+def binomial_pmf(n, k, p=0.5):
