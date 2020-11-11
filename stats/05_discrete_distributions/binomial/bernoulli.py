@@ -11,3 +11,5 @@ def bernoulli(p_success=0.5):
         return True
     else:
         return False
+
+# print(bernoulli(0.75))
