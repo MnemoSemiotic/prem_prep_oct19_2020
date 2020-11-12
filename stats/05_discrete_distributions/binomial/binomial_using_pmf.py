@@ -95,4 +95,9 @@ n = 40
 k = 5
 p = 2/30
 
-print(binomial_pmf(n, k, p)) # ~0.07746
+# print(binomial_pmf(n, k, p)) # ~0.07746
+
+
+'''
+"What is the probability in 12 coin flips of a fair coin, that you get 7 or fewer heads?"
+'''
