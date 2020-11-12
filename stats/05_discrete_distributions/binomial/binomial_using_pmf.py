@@ -55,8 +55,8 @@ n = 2
 k = 2
 p = 0.15
 
-print(0.15**2) # 0.0225
-print(binomial_pmf(n, k, p)) 
+# print(0.15**2) # 0.0225
+# print(binomial_pmf(n, k, p)) 
 
 
 '''What is the likelihood that 2 in 12 buses will arrive late at a given stop?'''
@@ -64,4 +64,15 @@ n = 12
 k = 2
 p = 0.15
 
+# print(binomial_pmf(n, k, p)) # ~0.2924
+
+
+'''
+There are 30 cars in a used car lot. At any given time, there's a 60% chance that each car is working as-is. What is the probability that the 10 cars the dealer sold today are working?
+'''
+n = 10
+k = 10
+p = 0.6
+
+print(p**k)
 print(binomial_pmf(n, k, p))
