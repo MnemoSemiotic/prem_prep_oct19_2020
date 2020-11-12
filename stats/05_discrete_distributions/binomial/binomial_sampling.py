@@ -94,7 +94,7 @@ def generate_n_successes(n=8, p=0.5):
 
 # verify
 test_trials = 100000
-print([sum(generate_n_successes(12, p=0.25).count(1) for _ in range(test_trials)]) / test_trials)
+print([sum(generate_n_successes(12, p=0.25).count(1)) for _ in range(test_trials)] / test_trials)
 
 
 def binary_sampling_dict_vary_p(num_bits=8, p=0.5, num_samples=1000):
