@@ -91,3 +91,8 @@ p = 3/7
 '''
 In 30 vehicles, it is known that 2 of them will be motorcycles. Knowing this, in 40 vehicles, what is the probability 5 of them will be motorcycles?
 '''
+n = 40
+k = 5
+p = 2/30
+
+print(binomial_pmf(n, k, p))
