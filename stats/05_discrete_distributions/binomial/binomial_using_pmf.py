@@ -102,7 +102,7 @@ p = 2/30
 "What is the probability in 12 coin flips of a fair coin, that you get 7 or fewer heads?"
 '''
 n = 12
-p 0.5
+p = 0.5
 print(binomial(n, 7, p) +binomial(n, 6, p) +binomial(n, 5, p) +binomial(n,4 , p) +binomial(n, 3, p) +binomial(n, 2, p) +binomial(n, 1, p) +binomial(n, 0, p))
 
 proba = 0.0
@@ -110,3 +110,5 @@ for k in range(0, 7+1):
     proba += binomial(n, k, p)
 
 print(proba)
+
+print(1 - (binomial(n, 8, p) + binomial(n, 9, p) +binomial(n, 10, p) +binomial(n, 11, p) +binomial(n, 12, p)))
