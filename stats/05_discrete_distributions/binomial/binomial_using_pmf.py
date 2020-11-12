@@ -121,4 +121,11 @@ Cumulative Density/Distribution Function
 '''
 
 def binomial_cdf(n, k_high, p=0.5):
-    pass
+    cumulative = 0.0
+
+    for k in range(0, k_high+1):
+        cumulative += binomial_pmf(n, k, p)
+
+    return cumulative
+
+# print(binomial_cdf(12, 7, p=0.5))
