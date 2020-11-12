@@ -78,3 +78,6 @@ p = 0.6
 # print(binomial_pmf(n, k, p))
 
 
+'''
+you go to chipotle every Tuesday, there’s 14 workers at chipotle and 7 of them work on Tuesdays. whats the chances you’ll see the same worker at the counter 5 out of the next 10 times that you go, if only 3 of them work the counter at any given time?
+'''
