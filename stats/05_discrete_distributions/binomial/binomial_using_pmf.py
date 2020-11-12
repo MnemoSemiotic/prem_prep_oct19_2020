@@ -134,3 +134,6 @@ def binomial_cdf(n, k_high, p=0.5):
 '''
 "You have 14 components in a circuit. At any given time, there is a 95% chance that a given component is functioning. What is the probability that 12 or more components are functioning? Assume that each component functions independently of every other."
 '''
+n = 14
+p = 0.95
+print(binomial_pmf(n, 12, p) + binomial_pmf(n, 13, p) + binomial_pmf(n, 14, p))
