@@ -47,3 +47,21 @@ p = 0.3
 
 # print(binomial_pmf(n, k, p)) # 0.1916
 
+
+'''
+On any weekday morning, a certain bus route has 10 buses in operation. If the probability of any given bus arriving late at a stop is 15% (ha!), and assuming that buses arrive at a given stop independently of each other, what is the likelihood that 2 consecutive buses will arrive late at a given stop?
+'''
+n = 2
+k = 2
+p = 0.15
+
+print(0.15**2)
+print(binomial_pmf(n, k, p))
+
+
+'''What is the likelihood that 2 in 12 buses will arrive late at a given stop?'''
+n = 12
+k = 2
+p = 0.15
+
+print(binomial_pmf(n, k, p))
