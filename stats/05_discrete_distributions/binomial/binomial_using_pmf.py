@@ -190,7 +190,7 @@ def binomial_pmf_dict(n, k_low, k_high, p=0.5):
 
     return d
 
-d = binomial_pmf_dict(8, 0, 8, p=0.5)
+d = binomial_pmf_dict(8, 0, 8, p=0.25)
 
 for k, v in d.items():
     print(f'{k}: {v}')
