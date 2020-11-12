@@ -74,5 +74,7 @@ n = 10
 k = 10
 p = 0.6
 
-print(p**k)
-print(binomial_pmf(n, k, p))
+# print(p**k) # ~0.006046
+# print(binomial_pmf(n, k, p))
+
+
