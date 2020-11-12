@@ -45,4 +45,5 @@ n = 20
 k = 6 
 p = 0.3
 
-print(binomial_pmf(n, k, p))
+# print(binomial_pmf(n, k, p)) # 0.1916
+
