@@ -55,8 +55,8 @@ n = 2
 k = 2
 p = 0.15
 
-print(0.15**2)
-print(binomial_pmf(n, k, p))
+print(0.15**2) # 0.0225
+print(binomial_pmf(n, k, p)) 
 
 
 '''What is the likelihood that 2 in 12 buses will arrive late at a given stop?'''
