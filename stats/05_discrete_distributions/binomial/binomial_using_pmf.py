@@ -36,3 +36,13 @@ def binomial_pmf(n, k, p=0.5):
 "You have 14 components in a circuit. At any given time, there is a 95% chance that a given component is functioning. What is the probability that 12 components are functioning? Assume that each component functions independently of every other."
 '''
 # print(binomial_pmf(14, 12, p=0.95)) # 0.1229
+
+
+'''
+You are sitting on a park bench watching geese walk by. There is a probability of 0.3 that any given goose will have feet that are more red than normal. What is the probability that in the next 20 geese you observe, 6 of them will have feet that are more red than usual?
+'''
+n = 20 
+k = 6 
+p = 0.3
+
+print(binomial_pmf(n, k, p))
