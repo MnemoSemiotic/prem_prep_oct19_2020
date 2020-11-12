@@ -76,3 +76,12 @@ d = binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500)
 #     print(f'{k}: {v / sum(d.values())}') # averaged probability
 
 
+''' ---------------- '''
+''' using random, we can change our p val '''
+
+def get_trial_result(p=0.5):
+    if random() < p:
+        return 1
+    else:
+        return 0
+
