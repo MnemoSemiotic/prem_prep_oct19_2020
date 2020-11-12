@@ -32,3 +32,15 @@ of that number of successes occurring.
 # {4: 2, 5: 1}
 
 def binary_sampling_dict(num_bits, num_samples=1000):
+    d = dict()
+
+    for _ in range(num_samples):
+        binary = generate_n_bits(num_bits)
+        k = sum(binary)
+
+        if k not in d:
+            d[k] = 0
+        d[k] += 1
+
+    return d
+
