@@ -72,4 +72,5 @@ def binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500):
 d = binary_sampling_clt(n_bits=8, num_samples=1000, num_sample_trials=500)
 
 for k, v in sorted(d.items()):
-    print(f'{k}: {v}') # average counts
+    # print(f'{k}: {v}') # average counts
+    print(f'{k}: {v / sum(d.values())}') # averaged probability
