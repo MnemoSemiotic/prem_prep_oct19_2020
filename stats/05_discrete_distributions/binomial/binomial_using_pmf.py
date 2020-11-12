@@ -136,5 +136,6 @@ def binomial_cdf(n, k_high, p=0.5):
 '''
 n = 14
 p = 0.95
-print(binomial_pmf(n, 12, p) + binomial_pmf(n, 13, p) + binomial_pmf(n, 14, p))
-print(1 - binomial_cdf(n, 11, p))
+# print(binomial_pmf(n, 12, p) + binomial_pmf(n, 13, p) + binomial_pmf(n, 14, p))
+# print(1 - binomial_cdf(n, 11, p))
+
