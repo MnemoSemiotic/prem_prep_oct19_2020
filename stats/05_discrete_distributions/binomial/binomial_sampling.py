@@ -25,5 +25,10 @@ return a dict where the keys repr the number of successes,
 and the values associated with those keys represent the count
 of that number of successes occurring.
 '''
+# 001011010 : 4 successes
+# 101011000 : 4 successes
+# 101011010 : 5 successes
+
+# {4: 2}
 
 def binary_sampling_dict(num_bits, num_samples=1000):
