@@ -103,12 +103,22 @@ p = 2/30
 '''
 n = 12
 p = 0.5
-print(binomial_pmf(n, 7, p) +binomial_pmf(n, 6, p) +binomial_pmf(n, 5, p) +binomial_pmf(n,4 , p) +binomial_pmf(n, 3, p) +binomial_pmf(n, 2, p) +binomial_pmf(n, 1, p) +binomial_pmf(n, 0, p))
+# print(binomial_pmf(n, 7, p) +binomial_pmf(n, 6, p) +binomial_pmf(n, 5, p) +binomial_pmf(n,4 , p) +binomial_pmf(n, 3, p) +binomial_pmf(n, 2, p) +binomial_pmf(n, 1, p) +binomial_pmf(n, 0, p))
 
-proba = 0.0
-for k in range(0, 7+1):
-    proba += binomial_pmf(n, k, p)
+# proba = 0.0
+# for k in range(0, 7+1):
+#     proba += binomial_pmf(n, k, p)
 
-print(proba)
+# print(proba)
 
-print(1 - (binomial_pmf(n, 8, p) + binomial_pmf(n, 9, p) +binomial_pmf(n, 10, p) +binomial_pmf(n, 11, p) +binomial_pmf(n, 12, p)))
+# print(1 - (binomial_pmf(n, 8, p) + binomial_pmf(n, 9, p) +binomial_pmf(n, 10, p) +binomial_pmf(n, 11, p) +binomial_pmf(n, 12, p)))
+
+
+'''
+CDF
+Cumulative Density/Distribution Function
+- cumulative implies "accumulator"
+'''
+
+def binomial_cdf(n, k_high, p=0.5):
+    pass
