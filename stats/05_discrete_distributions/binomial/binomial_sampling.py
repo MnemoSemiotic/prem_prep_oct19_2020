@@ -93,8 +93,8 @@ def generate_n_successes(n=8, p=0.5):
     return lst
 
 # verify
-# test_trials = 100000
-# print([sum(generate_n_successes(12, p=0.25).count(1) for _ in range(test_trials)]) / test_trials)
+test_trials = 100000
+print([sum(generate_n_successes(12, p=0.25).count(1) for _ in range(test_trials)]) / test_trials)
 
 
 def binary_sampling_dict_vary_p(num_bits=8, p=0.5, num_samples=1000):
@@ -134,8 +134,8 @@ def binary_sampling_clt_vary_p(n_bits=8, p=0.5, num_samples=1000, num_sample_tri
     
     return d_out
 
-d = binary_sampling_clt_vary_p(n_bits=8, p=0.25, num_samples=1000, num_sample_trials=500)
+# d = binary_sampling_clt_vary_p(n_bits=8, p=0.25, num_samples=1000, num_sample_trials=500)
 
-for k, v in sorted(d.items()):
-    # print(f'{k}: {v}') # average counts
-    print(f'{k}: {v / sum(d.values())}') # averaged probability
+# for k, v in sorted(d.items()):
+#     # print(f'{k}: {v}') # average counts
+#     print(f'{k}: {v / sum(d.values())}') # averaged probability
