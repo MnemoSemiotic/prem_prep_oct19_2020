@@ -103,12 +103,12 @@ p = 2/30
 '''
 n = 12
 p = 0.5
-print(binomial(n, 7, p) +binomial(n, 6, p) +binomial(n, 5, p) +binomial(n,4 , p) +binomial(n, 3, p) +binomial(n, 2, p) +binomial(n, 1, p) +binomial(n, 0, p))
+print(binomial_pmf(n, 7, p) +binomial_pmf(n, 6, p) +binomial_pmf(n, 5, p) +binomial_pmf(n,4 , p) +binomial_pmf(n, 3, p) +binomial_pmf(n, 2, p) +binomial_pmf(n, 1, p) +binomial_pmf(n, 0, p))
 
 proba = 0.0
 for k in range(0, 7+1):
-    proba += binomial(n, k, p)
+    proba += binomial_pmf(n, k, p)
 
 print(proba)
 
-print(1 - (binomial(n, 8, p) + binomial(n, 9, p) +binomial(n, 10, p) +binomial(n, 11, p) +binomial(n, 12, p)))
+print(1 - (binomial_pmf(n, 8, p) + binomial_pmf(n, 9, p) +binomial_pmf(n, 10, p) +binomial_pmf(n, 11, p) +binomial_pmf(n, 12, p)))
