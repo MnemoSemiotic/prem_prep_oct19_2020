@@ -95,4 +95,4 @@ n = 40
 k = 5
 p = 2/30
 
-print(binomial_pmf(n, k, p))
+print(binomial_pmf(n, k, p)) # ~0.07746
