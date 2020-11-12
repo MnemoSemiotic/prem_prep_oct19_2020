@@ -96,6 +96,16 @@ def generate_n_successes(n=8, p=0.5):
 # test_trials = 100000
 # print([sum(generate_n_successes(12, p=0.25).count(1)) for _ in range(test_trials)]) / test_trials)
 
-'''
 
-'''
+def binary_sampling_dict_vary_p(num_bits=8, p=0.5, num_samples=1000):
+    d = dict()
+
+    for _ in range(num_samples):
+        binary = generate_n_successes(num_bits, p)
+        k = sum(binary)
+
+        if k not in d:
+            d[k] = 0
+        d[k] += 1
+
+    return d
