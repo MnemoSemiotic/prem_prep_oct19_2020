@@ -29,6 +29,6 @@ of that number of successes occurring.
 # 101011000 : 4 successes
 # 101011010 : 5 successes
 
-# {4: 2}
+# {4: 2, 5: 1}
 
 def binary_sampling_dict(num_bits, num_samples=1000):
