@@ -14,4 +14,16 @@ def generate_n_bits(n=8):
 
     return lst
 
-print(generate_n_bits(n=16))
+# print(generate_n_bits(n=16))
+
+'''
+Write a function called binary_sampling_dict that has two params
+    num_bits
+    num_samples
+
+return a dict where the keys repr the number of successes,
+and the values associated with those keys represent the count
+of that number of successes occurring.
+'''
+
+def binary_sampling_dict(num_bits, num_samples=1000):
