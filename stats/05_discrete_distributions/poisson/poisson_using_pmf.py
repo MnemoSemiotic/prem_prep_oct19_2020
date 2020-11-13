@@ -2,7 +2,15 @@
 You have a satellite that takes stellar images of random places in space. On average, each image has 30 stars in it. What is the probability that a given image has 25 stars in it?
 
 e is a constant, a factor of entropy, and it applies in Poisson process
+
+
+Criteria we need for Poisson:
+an average for a given volume/area/length of time
+each event needs to be independent
+assumption that the rate is consistent, (independent and identical distribution)
 '''
+
+
 from math import e
 
 def factorial(n):
@@ -63,11 +71,5 @@ for k in range(0, 15+1):
 
 def poisson_cdf(lmbda, k_high):
 
-'''
-Criteria we need for Poisson:
-an average for a given volume/area/length of time
-each event needs to be independent
-assumption that the rate is consistent, (independent and identical distribution)
-'''
 
 
