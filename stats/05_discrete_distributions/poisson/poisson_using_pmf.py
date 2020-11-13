@@ -173,5 +173,28 @@ def poisson_counts(lmbda, low_k, high_k, num_samples=10000):
 
 d = poisson_counts(10, 0, 30, num_samples=10000)
 
-for k, v in d.items():
-    print(f'{k}: {v}')
+# for k, v in d.items():
+#     print(f'{k}: {v}')
+
+
+'''
+There's a busy intersection in Denver, on average where 30 cars pass by every 10 minutes. What is the probability that 40 cars will pass by if observing a new ten minute time period?
+'''
+# print(poisson_pmf(30, 40))
+
+
+'''
+You have a data set from observing a stream where salmon swim by at a rate of 10 fish every 15 minutes. What is the probability that 15 fish swim by in 30 minutes?
+'''
+# print(poisson_pmf(20, 15))
+
+
+'''
+In a volume of a certain compressed gas that is resampled daily, on average you would expect to observe 20 nitrogenous molecules. What is the probability that you would observe 25 or more of these molecules?
+'''
+# print(1 - poisson_cdf(20, 24))
+
+
+
+
+
