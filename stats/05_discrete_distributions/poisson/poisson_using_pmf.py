@@ -58,8 +58,10 @@ for k in range(0, 15+1):
     # print(f'{k}: {poisson_pmf(lmbda, k)}')
     proba += poisson_pmf(lmbda, k)
 
-print(1 - proba)
+# print(1 - proba)
 
+
+def poisson_cdf(lmbda, k_high):
 
 '''
 Criteria we need for Poisson:
