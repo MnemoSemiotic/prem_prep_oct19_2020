@@ -134,10 +134,10 @@ def poisson_pmf_dict(lmbda, low_k, high_k):
 
     return d
 
-d = poisson_pmf_dict(10, 0, 20)
+d = poisson_pmf_dict(10, 0, 30)
 
-# for k, v in d.items():
-#     print(f'{k}: {v}')
+for k, v in d.items():
+    print(f'{k}: {v}')
 
 
 def poisson_cdf_dict(lmbda, low_k, high_k):
@@ -155,3 +155,11 @@ d = poisson_cdf_dict(10, 0, 20)
 #     print(f'{k}: {v}')
 
 
+
+'''
+You are observing a phenonemon that follows perfectly
+a poisson process.
+Given a certain number of observations (10000), how many 
+events would you expect for each value of k, given a lmbda of 10,
+low_k=0 and high_k=30?
+'''
