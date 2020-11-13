@@ -241,5 +241,24 @@ def a_proba_dict():
 
     return d_out
 
-for k, v in a_proba_dict().items():
-    print(f'{k}: {v}')
+# for k, v in a_proba_dict().items():
+#     print(f'{k}: {v}')
+
+
+'''
+Random variable Z represents a sequence of dice rolls from different sided dice,
+processed as explained below
+
+12-sided 
+64-sided
+8-sided
+6-sided
+
+
+If the roll of the 12-sided die is divisible by 3, then Z will be +3 higher
+
+If the digit sum of the roll of the 64-sided die is 7, then Z will +7 higher, otherwise
+it will be +2 higher
+
+Add to Z the results of the 8-sided and the 6-sided dice.
+'''
