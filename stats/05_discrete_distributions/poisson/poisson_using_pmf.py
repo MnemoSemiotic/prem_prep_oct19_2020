@@ -70,6 +70,13 @@ for k in range(0, 15+1):
 
 
 def poisson_cdf(lmbda, k_high):
+    cdf = 0.0
 
+    for k in range(k_high+1):
+        cdf += poisson_pmf(lmbda, k)
+
+    return cdf
+
+print(1 - poisson_cdf(lmbda, 15))
 
 
