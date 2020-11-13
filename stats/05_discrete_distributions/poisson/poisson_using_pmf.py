@@ -32,8 +32,8 @@ square foot of your front yard, you find 15 roly polys?
 
 '''
 lmbda = 20
-k = 20
-print(poisson_pmf(lmbda, k))
+k = 15
+# print(poisson_pmf(lmbda, k))
 
 
 '''
@@ -43,7 +43,12 @@ Cars passing by an intersection at a certain time of day/year, for the duration 
 Question:
 PMF: A given intersection will have on avg 15 cars pass through in 10 minutes.
 What is the probability that 20 cars pass through in 15 minutes?
+'''
+lmbda = 15 * (15/10)
+k = 20
+# print(poisson_pmf(lmbda, k))
 
+'''
 CDF: Given the same intersection, what is the probability that more than 15
 cars will pass through in 15 minutes?
 
