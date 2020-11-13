@@ -127,7 +127,19 @@ value will be the probabilities associated with k outcomes
 '''
 
 def poisson_pmf_dict(lmbda, low_k, high_k):
-    pass
+    d = dict()
+
+    for k in range(low_k, high_k+1):
+        d[k] = poisson_pmf(lmbda, k)
+
+    return d
+
+d = poisson_pmf_dict(10, 0, 20)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
+
+    
 
 
 
