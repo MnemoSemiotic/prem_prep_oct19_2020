@@ -313,7 +313,7 @@ def z_counts_dict():
     
     return d
 
-for k, v in a_counts_dict().items():
+for k, v in z_counts_dict().items():
     print(f'{k}: {v}')
 
 def a_proba_dict():
