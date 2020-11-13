@@ -198,6 +198,11 @@ In a volume of a certain compressed gas that is resampled daily, on average you 
 
 
 '''
+GENERALIZED ANALYTIC APPROACH
+* using "counting"
+* could also use "sampling"
+* could also use "closed formulas" <-- this is ideal if you can, but you almost never can
+
 Random Variable A represents the sum of a six-sided die and a four sided die
 
 What is the min value of A?
