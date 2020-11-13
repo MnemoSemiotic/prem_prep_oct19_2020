@@ -149,7 +149,7 @@ def poisson_cdf_dict(lmbda, low_k, high_k):
     return d
 
 
-d = poisson_cdf_dict(10, 0, 20)
+d = poisson_cdf_dict(10, 0, 30)
 
 # for k, v in d.items():
 #     print(f'{k}: {v}')
@@ -163,3 +163,15 @@ Given a certain number of observations (10000), how many
 events would you expect for each value of k, given a lmbda of 10,
 low_k=0 and high_k=30?
 '''
+def poisson_counts(lmbda, low_k, high_k, num_samples=10000):
+    d = dict()
+
+    for k in range(low_k, high_k+1):
+        d[k] = round(poisson_pmf(lmbda, k) * num_samples)
+
+    return d
+
+d = poisson_counts(10, 0, 30, num_samples=10000)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
