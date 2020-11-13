@@ -10,7 +10,6 @@ each event needs to be independent
 assumption that the rate is consistent, (independent and identical distribution)
 '''
 
-
 from math import e
 
 def factorial(n):
@@ -330,5 +329,5 @@ def z_proba_dict():
 
     return d_out
 
-for k, v in z_proba_dict().items():
-    print(f'{k}: {v}')
+# for k, v in z_proba_dict().items():
+#     print(f'{k}: {v}')
