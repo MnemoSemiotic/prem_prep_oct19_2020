@@ -269,51 +269,61 @@ def digit_sum(num):
         out += int(dig)
     return out
 
-print(digit_sum(64))
+# print(digit_sum(64))
 
-# def outcomes_of_Z():
-#     outcomes = []
+def outcomes_of_Z():
+    outcomes = []
 
-#     for i in range(1, 12+1):
-#         for j in range(1, 64+1):
-#             for k in range(1, 8+1):
-#                 for l in range(1, 6+1):
-#                     outcomes.append([i, j, k, l]))
+    for i in range(1, 12+1):
+        for j in range(1, 64+1):
+            for k in range(1, 8+1):
+                for l in range(1, 6+1):
+                    outcomes.append([i, j, k, l])
     
-#     for outcome in outcomes:
-#         Z = 0
+    outcomes_next = []
 
-#         if outcome[0] % 3 == 0:
-#             Z += 3
-#         if outcome[1]
+    for outcome in outcomes:
+        Z = 0
 
-#     return outcomes
+        if outcome[0] % 3 == 0:
+            Z += 3
+        
+        if digit_sum(outcome[1]) == 7:
+            Z += 7
+        else:
+            Z += 2
 
-# # print(outcomes_of_A())
+        Z += outcome[2] + outcome[3]
+        
+        outcomes_next.append(Z)
 
-# def a_counts_dict():
-#     d = dict()
+    return outcomes
 
-#     outcomes = outcomes_of_A()
+print(outcomes_of_Z())
 
-#     for outcome in outcomes:
-#         if outcome not in d:
-#             d[outcome] = 0
-#         d[outcome] += 1
+def a_counts_dict():
+    d = dict()
+
+    outcomes = outcomes_of_A()
+
+    for outcome in outcomes:
+        if outcome not in d:
+            d[outcome] = 0
+        d[outcome] += 1
     
-#     return d
+    return d
 
-# # for k, v in a_counts_dict().items():
-# #     print(f'{k}: {v}')
+# for k, v in a_counts_dict().items():
+#     print(f'{k}: {v}')
 
-# def a_proba_dict():
-#     d = a_counts_dict()
-#     d_out = dict()
+def a_proba_dict():
+    d = a_counts_dict()
+    d_out = dict()
 
-#     for k, v in d.items():
-#         d_out[k] = v / sum(d.values())
+    for k, v in d.items():
+        d_out[k] = v / sum(d.values())
 
-#     return d_out
+    return d_out
 
-# # for k, v in a_proba_dict().items():
-# #     print(f'{k}: {v}')
+# for k, v in a_proba_dict().items():
+#     print(f'{k}: {v}')
