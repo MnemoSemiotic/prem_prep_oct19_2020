@@ -143,7 +143,7 @@ d = poisson_pmf_dict(10, 0, 20)
 def poisson_cdf_dict(lmbda, low_k, high_k):
     d = dict()
 
-    for k in range(low_k, high_k):
+    for k in range(low_k, high_k+1):
         d[k] = poisson_cdf(lmbda, k)
 
     return d
