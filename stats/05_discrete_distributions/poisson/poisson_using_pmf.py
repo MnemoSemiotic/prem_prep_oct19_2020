@@ -55,6 +55,7 @@ cars will pass through in 15 minutes?
 proba = 0.0
 
 for k in range(0, 15+1):
+    print(f'{k}: {poisson_pmf(lmbda, k)}')
     proba += poisson_pmf(lmbda, k)
 
 print(1 - proba)
