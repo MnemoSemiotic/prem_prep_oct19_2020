@@ -215,4 +215,20 @@ def outcomes_of_A():
 
     return outcomes
 
-print(outcomes_of_A())
+# print(outcomes_of_A())
+
+def a_counts_dict():
+    d = dict()
+
+    outcomes = outcomes_of_A()
+
+    for outcome in outcomes:
+        if outcome not in d:
+            d[outcome] = 0
+        d[outcome] += 1
+    
+    return d
+
+for k, v in a_counts_dict().items():
+    print(f'{k}: {v}')
+
