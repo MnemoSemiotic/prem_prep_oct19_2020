@@ -98,3 +98,10 @@ k = 12
 # print(poisson_pmf(lmbda, k))
 
 
+'''
+On average, 20 cars on a highway pass by a billboard every 2 minutes during the workday. 
+What is the prob that 10 cars pass by in 30 seconds?
+'''
+lmbda = 5
+k = 10
+print(poisson_pmf(lmbda, k))
