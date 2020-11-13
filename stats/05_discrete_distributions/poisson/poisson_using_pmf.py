@@ -299,7 +299,7 @@ def outcomes_of_Z():
 
     return outcomes_next
 
-print(outcomes_of_Z())
+# print(outcomes_of_Z())
 
 def z_counts_dict():
     d = dict()
@@ -325,5 +325,5 @@ def z_proba_dict():
 
     return d_out
 
-for k, v in a_proba_dict().items():
+for k, v in z_proba_dict().items():
     print(f'{k}: {v}')
