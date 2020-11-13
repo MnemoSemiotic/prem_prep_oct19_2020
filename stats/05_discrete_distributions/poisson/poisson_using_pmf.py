@@ -51,8 +51,16 @@ k = 20
 '''
 CDF: Given the same intersection, what is the probability that more than 15
 cars will pass through in 15 minutes?
+'''
+proba = 0.0
+
+for k in range(0, 15+1):
+    proba += poisson_pmf(lmbda, k)
+
+print(1 - proba)
 
 
+'''
 Criteria we need for Poisson:
 an average for a given volume/area/length of time
 each event needs to be independent
