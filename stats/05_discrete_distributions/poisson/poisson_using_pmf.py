@@ -136,10 +136,10 @@ def poisson_pmf_dict(lmbda, low_k, high_k):
 
 d = poisson_pmf_dict(10, 0, 20)
 
-for k, v in d.items():
-    print(f'{k}: {v}')
+# for k, v in d.items():
+#     print(f'{k}: {v}')
 
-    
+
 
 
 
