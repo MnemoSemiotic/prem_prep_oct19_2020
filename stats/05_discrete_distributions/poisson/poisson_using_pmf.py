@@ -86,6 +86,15 @@ During lunch, 7 people on average walk through a store's front door every 7 minu
 lmbda = 7
 k = 9
 '''
-print(poisson_pmf(7, 9))
+# print(poisson_pmf(7, 9))
+
+
+'''
+What is the probability that 12 people walk through the front door in 14 minutes?
+
+'''
+lmbda = 14
+k = 12
+# print(poisson_pmf(lmbda, k))
 
 
