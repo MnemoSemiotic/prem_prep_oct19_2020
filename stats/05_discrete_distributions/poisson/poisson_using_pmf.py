@@ -104,4 +104,14 @@ What is the prob that 10 cars pass by in 30 seconds?
 '''
 lmbda = 5
 k = 10
-print(poisson_pmf(lmbda, k))
+# print(poisson_pmf(lmbda, k))
+
+
+'''
+If on average 7 mosquitos bite you every 5 minutes while you're fishing, what is the probability that less than 4 mosquitos bite you in 5 minutes?
+'''
+lmbda = 7
+k_high = 3
+
+print(poisson_pmf(7, 3) + poisson_pmf(7, 2) + poisson_pmf(7, 1) + poisson_pmf(7, 0))
+print(poisson_cdf(lmbda, k_high))
