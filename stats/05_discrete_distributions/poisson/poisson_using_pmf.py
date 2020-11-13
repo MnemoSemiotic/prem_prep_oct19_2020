@@ -297,14 +297,14 @@ def outcomes_of_Z():
         
         outcomes_next.append(Z)
 
-    return outcomes
+    return outcomes_next
 
 print(outcomes_of_Z())
 
-def a_counts_dict():
+def z_counts_dict():
     d = dict()
 
-    outcomes = outcomes_of_A()
+    outcomes = outcomes_of_Z()
 
     for outcome in outcomes:
         if outcome not in d:
@@ -313,8 +313,8 @@ def a_counts_dict():
     
     return d
 
-# for k, v in a_counts_dict().items():
-#     print(f'{k}: {v}')
+for k, v in a_counts_dict().items():
+    print(f'{k}: {v}')
 
 def a_proba_dict():
     d = a_counts_dict()
