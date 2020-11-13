@@ -197,4 +197,22 @@ In a volume of a certain compressed gas that is resampled daily, on average you 
 
 
 
+'''
+Random Variable A represents the sum of a six-sided die and a four sided die
 
+What is the min value of A?
+2
+What is the max value of A?
+10
+'''
+
+def outcomes_of_A():
+    outcomes = []
+
+    for i in range(1, 6+1):
+        for j in range(1, 4+1):
+            outcomes.append(sum([i,j]))
+
+    return outcomes
+
+print(outcomes_of_A())
