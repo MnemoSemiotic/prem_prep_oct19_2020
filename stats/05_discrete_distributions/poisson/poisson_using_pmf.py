@@ -140,6 +140,16 @@ d = poisson_pmf_dict(10, 0, 20)
 #     print(f'{k}: {v}')
 
 
-def poisson_cdf_dict(lmbda, low_k, high_k)
+def poisson_cdf_dict(lmbda, low_k, high_k):
+    d = dict()
+
+    for k in range(low_k, high_k):
+        d[k] = poisson_cdf(lmbda, k)
+
+    return d
 
 
+d = poisson_cdf_dict(10, 0, 20)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
