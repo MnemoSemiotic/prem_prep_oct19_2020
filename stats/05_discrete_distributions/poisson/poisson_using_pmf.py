@@ -113,5 +113,21 @@ If on average 7 mosquitos bite you every 5 minutes while you're fishing, what is
 lmbda = 7
 k_high = 3
 
-print(poisson_pmf(7, 3) + poisson_pmf(7, 2) + poisson_pmf(7, 1) + poisson_pmf(7, 0))
-print(poisson_cdf(lmbda, k_high))
+# print(poisson_pmf(7, 3) + poisson_pmf(7, 2) + poisson_pmf(7, 1) + poisson_pmf(7, 0))
+# print(poisson_cdf(lmbda, k_high))
+
+
+
+'''
+
+apply a dict to analyze the poisson pmf
+
+keys will be the values of k
+value will be the probabilities associated with k outcomes
+'''
+
+def poisson_pmf_dict(lmbda, low_k, high_k):
+    pass
+
+
+
