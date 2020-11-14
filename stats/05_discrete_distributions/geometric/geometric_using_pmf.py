@@ -119,3 +119,14 @@ def geometric_pmf_dict(p, k_high, inclusive=True):
 Geometric CDF dict
 '''
 def geometric_cdf_dict(p, k_high, inclusive=True):
+    d = dict()
+
+    if inclusive:
+        starting_at = 1
+    else:
+        starting_at = 0
+
+    for k in range(starting_at, k_high+1):
+        d[k] = geom_cdf_closed(p, k, inclusive)
+
+    return d
