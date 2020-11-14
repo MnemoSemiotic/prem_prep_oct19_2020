@@ -50,11 +50,11 @@ def geometric_samples_dict(p=0.5, num_samples=10000):
 
         if num_failures not in d:
             d[num_failures] = 0
-        d[num_failures] + 1
+        d[num_failures] += 1
 
     return d
 
 d = geometric_samples_dict(p=0.5, num_samples=10000)
 
-for k, v in d.items():
+for k, v in sorted(d.items()):
     print(f'{k}: {v}')
