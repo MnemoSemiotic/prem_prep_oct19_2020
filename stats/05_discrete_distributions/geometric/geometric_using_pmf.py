@@ -92,3 +92,9 @@ you get your first heads before or on the 7th flip?
 # print(geom_cdf_accum(0.5, 6, inclusive=False))
 
 
+
+'''
+Geometric pmf dictionary
+'''
+
+def geometric_pmf_dict(p, k_high, inclusive=True):
