@@ -36,5 +36,11 @@ What is the probability that the first person who accepts a fliar is the 3rd per
 '''
 p = 0.65
 k = 3
-print(geometric_pmf(p, k, inclusive=True))
-print(geometric_pmf(p, k-1, inclusive=False))
+# print(geometric_pmf(p, k, inclusive=True))
+# print(geometric_pmf(p, k-1, inclusive=False))
+
+
+'''
+You are flipping a fair coin. What is the probability that
+you get your first heads on the 7th flip?
+'''
