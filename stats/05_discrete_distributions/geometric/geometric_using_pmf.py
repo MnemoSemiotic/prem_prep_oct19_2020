@@ -29,3 +29,12 @@ def geometric_pmf(p, k, inclusive=True):
     else:
         return p * (1-p)**k
 
+
+'''
+You are handing out fliars for a show. The probability of someone accepting a fliar is 0.65. 
+What is the probability that the first person who accepts a fliar is the 3rd person you offer a fliar?
+'''
+p = 0.65
+k = 3
+print(geometric_pmf(p, k, inclusive=True))
+print(geometric_pmf(p, k-1, inclusive=False))
