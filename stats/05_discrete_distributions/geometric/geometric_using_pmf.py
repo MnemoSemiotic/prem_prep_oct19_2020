@@ -80,3 +80,9 @@ def geom_cdf_closed(p, k, inclusive=True):
         return 1 - (1-p)**k
     else:
         return 1 - (1-p)**(k+1)
+
+
+'''
+You are flipping a fair coin. What is the probability that
+you get your first heads before or on the 7th flip?
+'''
