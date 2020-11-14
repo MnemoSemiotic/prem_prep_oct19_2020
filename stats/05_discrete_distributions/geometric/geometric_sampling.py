@@ -21,4 +21,4 @@ def perform_geometric(p=0.5):
     print(f'Success on the {num_trials} trial!')
 
 
-perform_geometric(p=0.5)
+perform_geometric(p=0.00005)
