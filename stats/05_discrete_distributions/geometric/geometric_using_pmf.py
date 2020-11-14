@@ -44,3 +44,12 @@ k = 3
 You are flipping a fair coin. What is the probability that
 you get your first heads on the 7th flip?
 '''
+# print(geometric_pmf(0.5, 7, inclusive=True))
+# print(geometric_pmf(0.5, 6, inclusive=False))
+
+
+'''
+A roofer hits their thumb with a hammer 1/1000 times when they swing the hammer. 
+What is the probability that the roofer will first hit their thumb 
+after swinging the hammer 37 times (hits on the 38th)?
+'''
