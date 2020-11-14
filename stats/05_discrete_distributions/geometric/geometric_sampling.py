@@ -20,5 +20,6 @@ def perform_geometric(p=0.5):
 
     print(f'Success on the {num_trials} trial!')
 
-
-perform_geometric(p=0.00005)
+p=0.00005
+perform_geometric(p)
+print(f'Expectation is {(1-p)/p} for a probability of {p}')
