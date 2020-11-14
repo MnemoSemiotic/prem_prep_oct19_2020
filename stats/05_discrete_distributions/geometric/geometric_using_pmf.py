@@ -130,3 +130,7 @@ def geometric_cdf_dict(p, k_high, inclusive=True):
         d[k] = geom_cdf_closed(p, k, inclusive)
 
     return d
+
+
+for k, v in geometric_cdf_dict(p=0.5, k_high=10, inclusive=True).items():
+    print(f'{k}: {v}')
