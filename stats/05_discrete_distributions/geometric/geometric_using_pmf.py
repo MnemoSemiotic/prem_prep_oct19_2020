@@ -76,3 +76,7 @@ def geom_cdf_accum(p, k, inclusive=True):
 
 
 def geom_cdf_closed(p, k, inclusive=True):
+    if inclusive:
+        return 1 - (1-p)**k
+    else:
+        return 1 - (1-p)**(k+1)
