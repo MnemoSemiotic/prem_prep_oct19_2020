@@ -111,5 +111,11 @@ def geometric_pmf_dict(p, k_high, inclusive=True):
     return d
 
 
-for k, v in geometric_pmf_dict(p=0.5, k_high=10, inclusive=True).items():
-    print(f'{k}: {v}')
+# for k, v in geometric_pmf_dict(p=0.5, k_high=10, inclusive=True).items():
+#     print(f'{k}: {v}')
+
+
+'''
+Geometric CDF dict
+'''
+def geometric_cdf_dict(p, k_high, inclusive=True):
