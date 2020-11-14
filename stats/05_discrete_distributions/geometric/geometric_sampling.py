@@ -43,3 +43,18 @@ def geometric(p=0.5):
 
 
 def geometric_samples_dict(p=0.5, num_samples=10000):
+    d = dict()
+
+    for _ in range(num_samples):
+        num_failures = geometric(p)
+
+        if num_failures not in d:
+            d[num_failures] = 0
+        d[num_failures] + 1
+
+    return d
+
+d = geometric_samples_dict(p=0.5, num_samples=10000)
+
+for k, v in d.items():
+    print(f'{k}: {v}')
