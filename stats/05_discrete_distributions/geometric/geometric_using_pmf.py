@@ -98,3 +98,18 @@ Geometric pmf dictionary
 '''
 
 def geometric_pmf_dict(p, k_high, inclusive=True):
+    d = dict()
+
+    if inclusive:
+        starting_at = 1
+    else:
+        starting_at = 0
+
+    for k in range(starting_at, k_high+1):
+        d[k] = geometric_pmf(p, k, inclusive)
+
+    return d
+
+
+for k, v in geometric_pmf_dict(p=0.5, k_high=10, inclusive=True).items():
+    print(f'{k}: {v}')
