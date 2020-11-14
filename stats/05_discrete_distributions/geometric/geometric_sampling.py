@@ -22,4 +22,4 @@ def perform_geometric(p=0.5):
 
 p=0.00005
 perform_geometric(p)
-print(f'Expectation is {(1-p)/p} for a probability of {p}')
+print(f'Expectation is {(1)/p} for a probability of {p}')
