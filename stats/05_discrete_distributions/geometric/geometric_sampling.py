@@ -61,3 +61,15 @@ d = geometric_samples_dict(p=0.05, num_samples=10000)
 
 
 def geometric_samples_proba_dict(p=0.5, num_samples=10000):
+    d = geometric_samples_dict(p, num_samples)
+    d_out = dict()
+
+    for k, v in d.items():
+        d_out[k] = v / num_samples
+
+    return d_out
+
+d = geometric_samples_proba_dict(p=0.05, num_samples=10000)
+
+for k, v in sorted(d.items()):
+    print(f'{k}: {v}')   
