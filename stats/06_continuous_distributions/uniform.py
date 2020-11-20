@@ -50,7 +50,7 @@ def sample_from_random_flt(thresh, num_samples=100000):
     d[f'> {thresh}'] = 0
 
     for _ in range(num_samples):
-        flt = get_flt(32)
+        flt = get_float(32)
 
         if flt > thresh:
             d[f'> {thresh}'] += 1
