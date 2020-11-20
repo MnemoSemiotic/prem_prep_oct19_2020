@@ -23,4 +23,12 @@ mu = 475
 sigma = 98
 x = 300
 
-print(normal_cdf(x, mu, sigma))
+# print(normal_cdf(x, mu, sigma))
+
+
+# Breakout
+mu = 90
+sigma = 10
+x = 100
+
+print(1 - normal_cdf(x, mu, sigma))
