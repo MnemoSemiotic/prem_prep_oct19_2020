@@ -13,7 +13,7 @@ def get_binary(n=8):
     return return_list
 
 
-def get_float(n=640):
+def get_float(n=8):
     bin_list = get_binary(n)
 
     float_accum = 0.0
