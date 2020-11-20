@@ -60,5 +60,5 @@ def sample_from_random_flt(thresh, num_samples=100000):
     return d
 
 
-thresh = 0.75
+thresh = 0.5
 print(sample_from_random_flt(thresh, num_samples=100000))
