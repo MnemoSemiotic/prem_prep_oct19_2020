@@ -42,3 +42,23 @@ def get_range(n=8, num_samples=10000):
 # print(get_range(n=8, num_samples=10000))
 
 
+
+def sample_from_random_flt(thresh, num_samples=100000):
+    d = dict()
+
+    d[f'<= {thresh}'] = 0
+    d[f'> {thresh}'] = 0
+
+    for _ in range(num_samples):
+        flt = get_flt(32)
+
+        if flt > thresh:
+            d[f'> {thresh}'] += 1
+        else:
+            d[f'<= {thresh}'] += 1
+
+    return d
+
+
+thresh = 0.75
+print(sample_from_random_flt(thresh, num_samples=100000))
