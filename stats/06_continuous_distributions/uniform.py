@@ -24,4 +24,19 @@ def get_float(n=8):
     return float_accum
 
 
-print(get_float())
+
+def get_range(n=8, num_samples=10000):
+    high = get_float(n)
+    low = get_float(n)
+
+    for _ in range(num_samples):
+        flt = get_float(n)
+
+        if flt > high:
+            high = flt
+        if flt < low:
+            low = flt
+    
+    return low, high
+
+print(get_range(n=80, num_samples=10000))
