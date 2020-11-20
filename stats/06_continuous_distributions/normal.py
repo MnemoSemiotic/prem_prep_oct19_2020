@@ -19,6 +19,8 @@ def normal_cdf(x=0, mu=0, sigma=1):
 
     return area_accum*0.001
 
+
+'''Example Slide 21'''
 mu = 475
 sigma = 98
 x = 300
@@ -26,7 +28,7 @@ x = 300
 # print(normal_cdf(x, mu, sigma))
 
 
-# Breakout
+'''Breakout Slide 23'''
 mu = 90
 sigma = 10
 x = 100
