@@ -1,20 +1,24 @@
 from math import e, sqrt
 
 def exponential_pdf(lmbda, x):
-    pass
+    if x < 0: return 0
+    return lmbda * e**(-lmbda * x)
 
 
 def exponential_cdf(lmbda, x):
-    pass
-
+    if x < 0: return 0
+    return 1 - e**(-lmbda * x)
 
 def exponential_mean(lmbda):
-    pass
+    return 1 / lmbda
 
 
 def exponential_variance(lmbda):
-    pass
+    return 1 / lmbda**2
 
 
 def exponential_std(lmbda):
-    pass
+    return sqrt(exponential_variance(lmbda))
+
+
+
