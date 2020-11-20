@@ -32,5 +32,8 @@ X ~ exponential(0.1)
 print(1 - exponential_cdf(lmbda=0.1, x=10))
 
 # What is the amount of time that you would expect to wait? 
+print(exponential_mean(0.1))
 
 # What is the variance of this random variable?
+print(exponential_variance(0.1))
+print(exponential_std(0.1))
