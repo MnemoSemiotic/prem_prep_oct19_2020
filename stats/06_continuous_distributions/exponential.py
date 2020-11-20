@@ -29,6 +29,7 @@ X ~ exponential(0.1)
 '''
 
 # What’s the probability that you’ll have to wait more than ten minutes? 
+print(1 - exponential_cdf(lmbda=0.1, x=10))
 
 # What is the amount of time that you would expect to wait? 
 
