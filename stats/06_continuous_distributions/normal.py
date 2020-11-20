@@ -1,8 +1,8 @@
 from math import e, pi, sqrt
 
 def normal_pdf(x, mu, sigma):
-    return (1 / sqrt(2*pi*sigma**2) * e**((-(0.5)*((x-mu) / sigma)**2)))
-    # return (1 / sigma * sqrt(2 * pi)) * e **(-(1/2) * ((x - mu)/sigma)**2)
+    # hah, I was missing parens in the denominator!
+    return (1 / (sigma * sqrt(2 * pi))) * e **(-(1/2) * ((x - mu)/sigma)**2)
 
 
 def normal_cdf(x=0, mu=0, sigma=1):
