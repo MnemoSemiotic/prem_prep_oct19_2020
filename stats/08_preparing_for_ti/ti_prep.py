@@ -138,6 +138,26 @@ p = 6/11
 n = 9
 k = 9
 
-# or directly
-print((6/11)**9)
-#0.1228
+# # or directly
+# print((6/11)**9)
+
+
+'''
+Poisson
+
+Five stray cats walk on your chicken coop every 2 hours at night. 
+What is the probability that 9 stray cats walk on the coop in
+3 hours on a given night?
+
+Contraints: time of night, seasonality, other cats don't affect
+this rate
+'''
+from math import e
+def poisson_pmf(lmbda, k):
+    return lmbda**k * e**(-lmbda) / factorial(k)
+
+
+lmbda = 5 * 3/2
+k = 9
+
+print(poisson_pmf(lmbda, k))
