@@ -67,3 +67,77 @@ n = 20
 '''
 Write your own story problem to be solved with the binomial_pmf
 '''
+
+'''
+On average 2 out of 7 plants have pest infestation , what is the probability that 5 out of 20 plants that I buy have pests.
+'''
+p = 2/7
+n = 20
+k = 5
+
+# print(binomial_pmf(n, k, p))
+
+
+'''
+Christmas is coming up and sometimes Santa forgets to bring presents to your house. Out of the past 14 years he has only brought you presents 2 times. Given his track record what is the probability that he DOES remember to visit your house 6 out of the next 15 years?
+'''
+p = 2/14
+n = 15
+k = 6
+
+# print(binomial_pmf(n, k, p))
+
+
+'''
+While walking down a street in New York City, you encounter five different pedestrians speaking a language other than english for every 20 people you pass. What is the probability you will encounter 13 people speaking a language other than english while walking past the next 45 pedestrians. 
+'''
+p = 5/20
+n = 45
+k = 13
+
+# print(binomial_pmf(n, k, p))
+
+
+'''
+The train you take to work leaves on time 77% of the time.
+What is the probability that your train will leave on time for work 15 out of 50 work days?
+'''
+p = 0.77
+n = 50
+k = 15
+
+
+'''
+On average in a group of butterfiles, 7 out of 10 have spots.  What is the probability that in a set of observations, two out of five have spots?
+'''
+p = 7/10
+n = 5
+k = 2
+
+'''
+Your favorite cafe sells coffee and tea as the beverages. The rate of purchase of these two items is equal. Assuming customers only buy one beverage, what is the probability that out of 100 customers 30 buy coffee?
+'''
+p = 0.5
+k = 30
+n = 100
+
+
+'''
+you are riding your bike downtown. In any 10 blocks,
+you realize that you have on average 2 blocks w police cars.
+What is the probability that you see 7 blocks w police cars in the next 10 blocks?
+'''
+p = 2/10
+n = 10
+k = 7
+
+
+
+"So far, at least 6 out of the more well known 11 Star Wars movies have been awful. If that trend continues, what is the probability that another 9 be awful?"
+p = 6/11
+n = 9
+k = 9
+
+# or directly
+print((6/11)**9)
+#0.1228
