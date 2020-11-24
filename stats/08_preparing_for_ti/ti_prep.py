@@ -296,4 +296,15 @@ get min and max
 def get_min_max(lst):
     return min(lst), max(lst)
 
-print(get_min_max(outcomes_Y))
+# print(get_min_max(outcomes_Y))
+# (2.0, 391.44348251056624)
+
+
+'''
+Use sampling
+'''
+from random import choice
+def roll_dice_do_math():
+    return roll_math([choice(1, 4+1),choice(1, 7+1),choice(1, 12+1)])
+
+print(roll_dice_do_math())
