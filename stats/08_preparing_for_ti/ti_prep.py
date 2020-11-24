@@ -344,5 +344,5 @@ for outcome in outcomes_Y:
         d2[outcome] = 0
     d2[outcome] += 1
 
-for k, v in sorted(d2.items()):
-    print(f'{k}: {v}')
+# for k, v in sorted(d2.items()):
+#     print(f'{k}: {v}')
