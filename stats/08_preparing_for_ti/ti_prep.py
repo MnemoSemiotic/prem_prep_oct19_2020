@@ -160,4 +160,33 @@ def poisson_pmf(lmbda, k):
 lmbda = 5 * 3/2
 k = 9
 
-print(poisson_pmf(lmbda, k))
+# print(poisson_pmf(lmbda, k))
+
+
+'''
+When viewing a certain section of the sky at night, typically four shooting stars can be seen in a 30 minute period.  What is the probability of seeing seven shooting stars in 45 minutes?
+'''
+lmbda = 4 * 45/30
+k = 7
+
+
+'''
+6 kids have funny ski crashes every hour on the bunny slope. What is the probability that during the 30 minutes you sit down to eat lunch and watch the bunny slope, you witness exactly 5 funny crashes. (no kids were harmed in the making of this example).
+'''
+lmbda = 6 * 1/2
+k = 5
+
+
+'''
+in perseid meteor shower 2020 estimate the shooting 20 shooting star in an hour what is probablity that we will see a hundred shooting star from misnight to 6 am?
+'''
+lmbda = 20 * 6
+k = 100
+
+
+'''
+you are riding you bike downtown. In any 10 blocks,
+you realize that you have on average 2 blocks w police cars.
+What is the probability that you see 7 blocks w police cars in the next 10 blocks?
+'''
+lmbda = 2
