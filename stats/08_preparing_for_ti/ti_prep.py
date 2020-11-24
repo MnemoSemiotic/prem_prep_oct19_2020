@@ -320,3 +320,5 @@ for num in range(0, 401, 10):
     d[f'{num-9} to {num}'] = 0
 
 print(d)
+for val in outcomes_Y:
+    pass
