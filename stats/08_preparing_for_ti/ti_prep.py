@@ -314,4 +314,9 @@ def roll_dice_do_math():
 
 d = dict()
 
-print(list(range(0, 401, 10)))
+for num in range(0, 401, 10):
+    if num == 0: continue
+
+    d[f'{num-9} to {num}'] = 0
+
+print(d)
