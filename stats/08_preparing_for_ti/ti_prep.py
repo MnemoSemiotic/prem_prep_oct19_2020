@@ -319,6 +319,17 @@ for num in range(0, 401, 10):
 
     d[f'{num-9} to {num}'] = 0
 
-print(d)
+
 for val in outcomes_Y:
-    pass
+    for k, v in d.items():
+        low, _, high = k.split()
+
+        if val >= int(low) and val <= int(high):
+            d[k] += 1
+
+for k, v in d.items():
+    print(f'{k}: {v}')
+
+
+print(len(outcomes_Y))
+print(sum(d.values()))
