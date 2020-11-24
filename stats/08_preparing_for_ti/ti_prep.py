@@ -231,4 +231,7 @@ k = 14
 
 '''
 So what are some good identifiers of when we should use which?  I.e. when we should use Binomial vs when we should use Poisson
+
+Consider that Poisson events (successes) can occur nearly simultaneously, whereas Binomial events are discretized into unique moments/trials/observations
 '''
+
