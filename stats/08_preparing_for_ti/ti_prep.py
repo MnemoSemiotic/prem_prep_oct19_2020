@@ -201,7 +201,8 @@ k = 7
 '''
 On average, 25,539 cyclists cross the East River bridges every day . What is the probability that 200,000 cyclists will cross the East River bridges in a given week?
 '''
-
+lmbda = 25539 * 7
+k = 200000
 
 
 
