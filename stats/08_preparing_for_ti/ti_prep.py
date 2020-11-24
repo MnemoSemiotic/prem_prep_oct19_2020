@@ -190,3 +190,4 @@ you realize that you have on average 2 blocks w police cars.
 What is the probability that you see 7 blocks w police cars in the next 10 blocks?
 '''
 lmbda = 2
+k = 7
