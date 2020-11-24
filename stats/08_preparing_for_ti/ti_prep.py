@@ -312,6 +312,7 @@ def roll_dice_do_math():
 
 ''' Analysis using Dictionaries '''
 
+# bin approach
 d = dict()
 
 for num in range(0, 401, 10):
@@ -328,9 +329,20 @@ for val_ in outcomes_Y:
         if val >= int(low) and val <= int(high):
             d[k] += 1
 
-for k, v in d.items():
+# for k, v in d.items():
+#     print(f'{k}: {v}')
+
+
+# print(len(outcomes_Y))
+# print(sum(d.values()))
+
+
+d2 = dict()
+
+for outcome in outcomes_Y:
+    if outcome not in d2:
+        d2[outcome] = 0
+    d2[outcome] += 1
+
+for k, v in d2.items():
     print(f'{k}: {v}')
-
-
-print(len(outcomes_Y))
-print(sum(d.values()))
