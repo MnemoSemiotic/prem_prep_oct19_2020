@@ -126,6 +126,9 @@ n = 100
 you are riding your bike downtown. In any 10 blocks,
 you realize that you have on average 2 blocks w police cars.
 What is the probability that you see 7 blocks w police cars in the next 10 blocks?
+
+Constraint: expect that you will never see 2 police cars on 
+a single block
 '''
 p = 2/10
 n = 10
@@ -188,12 +191,16 @@ k = 100
 you are riding you bike downtown. In any 10 blocks,
 you realize that you have on average 2 blocks w police cars.
 What is the probability that you see 7 blocks w police cars in the next 10 blocks?
+
+Assume more than 1 police car can occur on a block
 '''
 lmbda = 2
 k = 7
 
 
+'''
 On average, 25,539 cyclists cross the East River bridges every day . What is the probability that 200,000 cyclists will cross the East River bridges in a given week?
+'''
 
 
 
@@ -213,7 +220,7 @@ k = 15
 What's the probability you'll eat two cups of fruit every day of the week?"
 
 considering 7 days
-    eat 1.5 cups of fruit
+    eat 1.5 cups of fruit out of 7 days
 
 '''
 lmbda = 1.5
