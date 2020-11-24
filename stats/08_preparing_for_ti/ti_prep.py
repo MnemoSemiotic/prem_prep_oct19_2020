@@ -4,12 +4,14 @@
 
 TI Skills/Outline
 
-* textbook problems re: Discrete Distrs
+* textbook problems re: Discrete Distrs and Probability
     * Recognize and solve problems related to:
         * Binomial
         * Poisson
         * Geometric
         * Uniform
+        * Bayes Theorem
+
     
     * Understanding counting or binary through the lens of independent trials
         * binary ex: [0,1,1,0,1] <- each "coin flip or bit is independent of the other, if each bit is randomly generated"
