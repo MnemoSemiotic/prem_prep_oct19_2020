@@ -305,6 +305,11 @@ Use sampling
 '''
 from random import choice
 def roll_dice_do_math():
-    return roll_math([choice(1, 4+1),choice(1, 7+1),choice(1, 12+1)])
+    return roll_math([choice(range(1, 4+1)),choice(range(1, 7+1)),choice(range(1, 12+1))])
 
-print(roll_dice_do_math())
+# print(roll_dice_do_math())
+
+
+''' Analysis using Dictionaries '''
+
+d = dict()
