@@ -235,3 +235,21 @@ So what are some good identifiers of when we should use which?  I.e. when we sho
 Consider that Poisson events (successes) can occur nearly simultaneously, whereas Binomial events are discretized into unique moments/trials/observations
 '''
 
+
+'''
+Random Vars and Coding Mathematical Formulations
+
+
+'''
+
+'''
+Y is the result of rolling a 4-sided die, then a 7-sided die,
+then a 12-sided die and processing it through this function:
+
+y = (d4**3 + d7**2) * d12**(1/2)
+'''
+def roll_math(roll_lst):
+    d4, d7, d12 = roll_lst
+    return (d4**3 + d7**2) * d12**(1/2)
+
+print(roll_math([3, 5, 6]))
