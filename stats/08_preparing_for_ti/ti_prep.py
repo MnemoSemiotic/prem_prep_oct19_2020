@@ -36,4 +36,25 @@ You are sitting on a park bench watching city buses go by. On average,
 two out of every 13 buses that goes by has an advertisement for
 oat milk on it. What is the probability that, in one particular
 set of observations, 10 out of 20 buses have oat milk ads on them?
+
+p = 2/13
+k = 10
+n = 20
+
+binomial_pmf(n, k, p)
 '''
+
+def factorial(n):
+    prod = 1
+    for num in range(1, n+1):
+        prod *= num
+    return prod
+
+def combinations(n, k):
+    return factorial(n) / (factorial(n-k) * factorial(k))
+
+def binomial_pmf(n, k, p=0.5):
+    return combinations(n, k) * (p**k) * ((1-p)**(n-k))
+
+
+print(binomial_pmf(n, k, p))
