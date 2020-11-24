@@ -320,7 +320,8 @@ for num in range(0, 401, 10):
     d[f'{num-9} to {num}'] = 0
 
 
-for val in outcomes_Y:
+for val_ in outcomes_Y:
+    val = round(val_)
     for k, v in d.items():
         low, _, high = k.split()
 
