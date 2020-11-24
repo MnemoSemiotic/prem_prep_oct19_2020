@@ -252,4 +252,22 @@ def roll_math(roll_lst):
     d4, d7, d12 = roll_lst
     return (d4**3 + d7**2) * d12**(1/2)
 
-print(roll_math([3, 5, 6]))
+
+'''
+What is the probability that:
+
+P(Y <= 80) = ?
+
+P(Y > 50) = ?
+'''
+
+''' Using Counting '''
+outcomes_Y = []
+
+for d4 in range(1, 4+1):
+    for d7 in range(1, 7+1):
+        for d12 in range(1, 12+1):
+            outcomes_Y.append([d4, d7, d12])
+
+for lst in outcomes_Y:
+    print(lst)
