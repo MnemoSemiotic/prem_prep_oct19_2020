@@ -191,3 +191,36 @@ What is the probability that you see 7 blocks w police cars in the next 10 block
 '''
 lmbda = 2
 k = 7
+
+
+On average, 25,539 cyclists cross the East River bridges every day . What is the probability that 200,000 cyclists will cross the East River bridges in a given week?
+
+
+
+
+
+'''
+On average, 4 runners run on the local track every 30 minutes during the day.
+What is the probability that 15 runners run on the track
+in any 2 hours during the day?
+'''
+lmbda = 4 * 4
+k = 15
+
+
+'''
+"You eat an average of half a cup of fruit, three days out of the week.
+What's the probability you'll eat two cups of fruit every day of the week?"
+
+considering 7 days
+    eat 1.5 cups of fruit
+
+'''
+lmbda = 1.5
+k = 14
+
+
+
+'''
+So what are some good identifiers of when we should use which?  I.e. when we should use Binomial vs when we should use Poisson
+'''
