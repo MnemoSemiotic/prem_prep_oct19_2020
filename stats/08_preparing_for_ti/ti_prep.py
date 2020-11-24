@@ -267,7 +267,7 @@ outcomes_Y = []
 for d4 in range(1, 4+1):
     for d7 in range(1, 7+1):
         for d12 in range(1, 12+1):
-            outcomes_Y.append([d4, d7, d12])
+            outcomes_Y.append(roll_math([d4, d7, d12]))
 
 for lst in outcomes_Y:
     print(lst)
