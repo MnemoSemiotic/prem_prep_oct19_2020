@@ -286,5 +286,14 @@ for val in outcomes_Y:
     if val > 50:
         gt_50 += 1
 
-print(f'P(Y <= 80) = {lte_80 / len(outcomes_Y)}')
-print(f'P(Y > 50) = {gt_50 / len(outcomes_Y)}')
+# print(f'P(Y <= 80) = {lte_80 / len(outcomes_Y)}')
+# print(f'P(Y > 50) = {gt_50 / len(outcomes_Y)}')
+
+'''
+get min and max
+'''
+
+def get_min_max(lst):
+    return min(lst), max(lst)
+
+print(get_min_max(outcomes_Y))
