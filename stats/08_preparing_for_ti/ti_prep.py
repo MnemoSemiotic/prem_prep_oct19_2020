@@ -64,3 +64,6 @@ n = 20
 # print(binomial_pmf(n, k, p))
 
 
+'''
+Write your own story problem to be solved with the binomial_pmf
+'''
